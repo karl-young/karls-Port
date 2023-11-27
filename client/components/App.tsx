@@ -1,3 +1,4 @@
+import Background from "./Canvas"
 import Header from "./Header"
 
 function App() {
@@ -5,6 +6,7 @@ function App() {
     <>
       <header className="header">
         <Header />
+        <Background />
       </header>
       <section className="main">{/* add your code here */}</section>
     </>

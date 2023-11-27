@@ -1,12 +1,12 @@
 const Header = () => {
   return (
     <>
-      <section className="text-3xl font-bold underline">
-        <div>
-          <h2>Hello my name is.</h2>
+      <section className="flex flex-col w-fit h-auto ml-auto mr-auto  relative self-center items-center font-bold underline ">
+        <div className="text-2xl text-neutral ">
+          <h1>Hello, My name is. <span className="text-blue">Karl</span></h1>
         </div>
-        <div className="text-5xl">
-          <h1>Karl Young</h1>
+        <div>
+          <a href="#"className="text-neutral">Click Me</a>
         </div>
       </section>
     </>

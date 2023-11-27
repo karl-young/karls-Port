@@ -1,9 +1,11 @@
 const Background = () => {
   return(
     <>
-    <div>
+    <div className="container mx-auto">
       <canvas id="canvas"></canvas>
     </div>
     </>
   )
 }
+
+export default Background

@@ -4,12 +4,17 @@ export default {
   theme: {
     colors: {
       green: '#15803d',
-      lime: '#4d7c0f',
       sky: '#bae6fd',
       neutral: '#d6d3d1',
       blue: '#60a5fa',
       stone: '#0c0a09',
-      slate: "#0f172a"
+      slate: {
+        600: '#475569',
+        700: '#334155',
+        800: '#1e293b',
+        900: '#0f172a',
+        950: '#020617',
+      },
     },
     fontFamily: {
       sans: ['Helvetica', 'Arial', 'sans-serif'],

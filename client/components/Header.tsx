@@ -11,7 +11,8 @@ const Header = () => {
           <p>{"I'm a junior web developer"}</p>
         </div>
         <div>
-          <a href="#about" className="text-neutral hover:text-green">
+          <a href="#about" className="text-neutral
+          hover:border-solid hover:border hover:border-slate-500 hover:transition hover:text-green ease-in-out delay-200 hover:-translate-y-1 hover:scale-110 duration-300 ">
             Click Me
           </a>
         </div>

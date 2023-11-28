@@ -8,7 +8,8 @@ export default {
       sky: '#bae6fd',
       neutral: '#d6d3d1',
       blue: '#60a5fa',
-      stone: '#292524',
+      stone: '#0c0a09',
+      slate: "#0f172a"
     },
     fontFamily: {
       sans: ['Helvetica', 'Arial', 'sans-serif'],

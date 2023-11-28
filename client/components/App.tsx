@@ -1,13 +1,18 @@
 import Background from "./Canvas"
 import Header from "./Header"
+import NavBar from "./NavBar"
 
 function App() {
   return (
     <>
-      <header className="header">
+      <header >
         <Header />
-        <Background />
+        <Background  />
       </header>
+      <section>
+        <NavBar />
+
+      </section>
       <section className="main">{/* add your code here */}</section>
     </>
   )

@@ -1,7 +1,7 @@
 const NavBar = () => {
   return (
     <>
-      <div>
+      <div className="bg-blue">
         <h1>NavBar</h1>
       </div>
         

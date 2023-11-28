@@ -9,7 +9,8 @@ const NavBar = () => {
             ['Projects', '/projects'],
             ['Contact', '/Contact'],
           ].map(([title, url]) => (
-            <a key={url}
+            <a
+              key={url}
               href={url}
               className="rounded-lg px-3 py-2 text-natural font-medium text-neutral hover:text-green"
             >

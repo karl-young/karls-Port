@@ -10,6 +10,11 @@ export default {
       blue: '#60a5fa',
       stone: '#292524',
     },
+    fontFamily: {
+      sans: ['Helvetica', 'Arial', 'sans-serif'],
+      serif: ['ui-serif', 'Georgia'],
+      mono: ['ui-monospace', 'SFMono-Regular'],
+    },
     extend: {},
   },
   plugins: [],

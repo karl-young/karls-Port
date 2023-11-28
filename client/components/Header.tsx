@@ -1,12 +1,19 @@
 const Header = () => {
   return (
     <>
-      <section className="flex flex-col w-fit h-screen ml-auto mr-auto  relative self-center items-center font-bold underline z-10 bg-sky">
-        <div className="text-2xl font-bold text-neutral ">
-          <h1>Hello, My name is <span className="text-blue">Karl</span></h1>
+      <section className="relative self-center flex flex-col justify-center item-center w-fit h-screen ml-auto mr-auto  z-20   ">
+        <div className="text-4xl font-Helvetica underline text-neutral ">
+          <h1>
+            Hello, I&apos;m <span className="text-blue">Karl</span>
+          </h1>
+        </div>
+        <div className="text-4xl font-Helvetica underline text-neutral ">
+          <p>{"I'm a junior web developer"}</p>
         </div>
         <div>
-          <a href="#"className="text-neutral">Click Me</a>
+          <a href="#about" className="text-neutral hover:text-green">
+            Click Me
+          </a>
         </div>
       </section>
     </>

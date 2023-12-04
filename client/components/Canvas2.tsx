@@ -1,88 +1,38 @@
-import React from 'react'
-import ReactDOM from 'react-dom'
-import { createRoot } from 'react-dom/client'
+import React, { useEffect, useRef } from 'react'
 
-interface Circle {
- 
-  x: number, y: number, dx: number, dy: number, radius: number, color: string
-}
+const Canvas: React.FC = () => {
+  const canvasRef = useRef<HTMLCanvasElement | null>(null)
 
-const CanvasAnimation: React.FC = () => {
-  const canvasRef = React.useRef<HTMLCanvasElement>(null)
-  const [circleArray, setCircleArray] = React.useState<Circle[]>([])
-
-  React.useEffect(() => {
+  useEffect(() => {
     const canvas = canvasRef.current
-    const c = canvas?.getContext('2d')
-    const colors: string[] = []
-
-    for (let i = 0; i < 20; i++) {
-      const randomColor =
-        '#' + Math.floor(Math.random() * 16777215).toString(16)
-      colors.push(randomColor)
-    }
-
-    // const mouse = {
-    //   x: undefined,
-    //   y: undefined,
-    // }
-
-    // const maxRadius = 50
-
-    const resizeCanvas = () => {
-      canvas.width = window.innerWidth
-      canvas.height = window.innerHeight
-      init()
-    }
-
-    const init = () => {
-      setCircleArray([])
-      for (let i = 0; i < 400; i++) {
-        const radius = Math.random() * 3 + 1
-        const y = Math.random() * (window.innerHeight - radius * 2) + radius
-        const x = Math.random() * (window.innerWidth - radius * 2) + radius
-        const dx = (Math.random() - 0.5) * 1
-        const dy = (Math.random() - 0.5) * 1
-        const color = colors[Math.floor(Math.random() * colors.length)]
-        setCircleArray((prevArray) => [
-          ...prevArray,
-          new Circle(x, y, dx, dy, radius, color),
-        ])
-      }
-    }
+    let requestId: number
 
     const animate = () => {
-      requestAnimationFrame(animate)
-      c?.clearRect(0, 0, window.innerWidth, window.innerHeight)
-      for (let i = 0; i < circleArray.length; i++) {
-        circleArray[i].update()
+      // Your animation logic here
+      // ...
+
+      // Example animation code
+      const animateFrame = () => {
+        // ...
+        requestId = requestAnimationFrame(animateFrame)
+      }
+
+      animateFrame()
+    }
+
+    if (canvas) {
+      const context = canvas.getContext('2d')
+      if (context) {
+        animate()
       }
     }
 
-    // window.addEventListener('mousemove', function (e) {
-    //   mouse.x = e.x
-    //   mouse.y = e.y
-    // })
-
-    window.addEventListener('DOMContentLoaded', function () {
-      resizeCanvas()
-    })
-
-    window.addEventListener('resize', function () {
-      resizeCanvas()
-    })
-
-    animate()
-    init()
+    return () => {
+      cancelAnimationFrame(requestId)
+    }
   }, [])
 
-  return (
-    <canvas
-      className="absolute inset-0 h-100% bg-stone w-100% z-0 "
-      id="canvas"
-      ref={canvasRef}
-    ></canvas>
-  )
+  return <canvas id="canvas" ref={canvasRef} />
 }
 
-export default CanvasAnimation
+export default Canvas

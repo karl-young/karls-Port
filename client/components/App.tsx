@@ -1,6 +1,6 @@
 import About from './About'
-import Background from './Canvas'
-import CanvasAnimation from './Canvas2'
+import Canvas from './Canvas'
+
 import Header from './Header'
 import NavBar from './NavBar'
 
@@ -10,7 +10,7 @@ function App() {
       <section className="main-bg">
         <header>
           <Header />
-          <canvas id="canvas"  ></canvas>
+          <Canvas />
         </header>
         <section>
           <NavBar />

@@ -3,23 +3,7 @@ export default function useAnimation() {
   const c = canvas.getContext('2d')
   const colors = ['#5f5dbd', '#5e87b8', '#83cee0', '#a4fbe3']
 
-  // for (let i = 0; i < 20; i++) {
-  //   const randomColor = '#' + Math.floor(Math.random() * 16777215).toString(16)
-  //   colors.push(randomColor)
-  // }
-
-  // let mouse = {
-  //   x: undefined,
-  //   y: undefined,
-  // }
-
   let maxRadius = 50
-  // let minRadius = 4
-
-  // window.addEventListener('mousemove', function (e) {
-  //   mouse.x = e.x
-  //   mouse.y = e.y
-  // })
 
   function resizeCanvas() {
     canvas.width = window.innerWidth
@@ -61,22 +45,6 @@ export default function useAnimation() {
       this.x += this.dx
       this.y += this.dy
 
-      //interactivity
-      // if (
-      //   mouse.x - this.x < 50 &&
-      //   mouse.x - this.x > -50 &&
-      //   mouse.y - this.y < 50 &&
-      //   mouse.y - this.y > -50
-      // ) {
-      //   if (this.radius < maxRadius) {
-      //     this.radius += 1
-      //   }
-      // } else if (this.radius > this.minRadius) {
-      //   this.radius -= 1
-      // }
-      //for lines
-      // connectCirclesWithMouse()
-
       this.draw()
     }
   }
@@ -105,30 +73,5 @@ export default function useAnimation() {
       circleArray[i].update()
     }
   }
-
-  return init()
+  init()
 }
-
-// -- Lines --//
-// function connectCirclesWithMouse() {
-//   for (let i = 0; i < circleArray.length; i++) {
-//     const distance = calulateDistance(
-//       mouse.x,
-//       mouse.y,
-//       circleArray[i].x,
-//       circleArray[i].y
-//     )
-
-//     if (distance < maxRadius) {
-//       c.beginPath()
-//       c.moveTo(mouse.x, mouse.y)
-//       c.lineTo(circleArray[i].x, circleArray[i].y)
-//       c.strokeStyle = circleArray[i].color
-//       c.stroke()
-//     }
-//   }
-// }
-
-// function calulateDistance(x1, y1, x2, y2) {
-//   return Math.sqrt((x2 - x1) ** 2 + (y2 - y1) ** 2)
-// }

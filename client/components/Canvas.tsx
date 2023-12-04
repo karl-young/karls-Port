@@ -1,29 +1,16 @@
-import UseAnimation from '../../animation'
+import useAnimation from '../../animation'
+import React, { useEffect, useRef } from 'react'
+const Canvas = () => {
+  const canvasRef = useRef()
 
-const Background = () => {
-  // function resizeCanvas() {
-  //   canvas.width = window.innerWidth
-  //   canvas.height = window.innerHeight
-  // }
+  useEffect(() => {
+    const canvas = canvasRef.current
+    const context = canvas?.getContext('2d')
 
-  return (
-    <>
-      <div>
-        <div>
-          <canvas id="canvas">
-            <UseAnimation />
-          </canvas>
-        </div>
-      </div>
-    </>
-  )
+    useAnimation(canvas, context)
+  }, [])
+
+  return <canvas id="canvas"></canvas>
 }
 
-// return (
-//   <canvas
-//     onMouseMove={(evt) => animationRef.current.onMouseMove(evt)}
-//     ref={canvasRef}
-//   />
-// )
-
-export default Background
+export default Canvas

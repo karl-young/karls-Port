@@ -1,13 +1,29 @@
+import UseAnimation from '../../animation'
+
 const Background = () => {
+  // function resizeCanvas() {
+  //   canvas.width = window.innerWidth
+  //   canvas.height = window.innerHeight
+  // }
+
   return (
     <>
-      <div className="absolute inset-0 h-100% bg-stone w-100% z-0 ">
+      <div>
         <div>
-          <canvas id="canvas"></canvas>
+          <canvas id="canvas">
+            <UseAnimation />
+          </canvas>
         </div>
       </div>
     </>
   )
 }
+
+// return (
+//   <canvas
+//     onMouseMove={(evt) => animationRef.current.onMouseMove(evt)}
+//     ref={canvasRef}
+//   />
+// )
 
 export default Background

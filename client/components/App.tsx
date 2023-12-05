@@ -10,7 +10,9 @@ function App() {
       <section className="main-bg">
         <header>
           <Header />
+          <div>
           <Canvas />
+          </div>
         </header>
         <section>
           <NavBar />

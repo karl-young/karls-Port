@@ -6,10 +6,10 @@
   .main-bg{
  @apply absolute inset-0  bg-stone w-100% z-0 
 }} */
-#canvas {
+/* #canvas {
   position: absolute;
   inset: 0px;
   background-color: #334155;
   width: 100%;
   z-index: 999;
-}
+} */

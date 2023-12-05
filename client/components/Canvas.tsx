@@ -130,7 +130,13 @@ const Canvas = () => {
     animate()
   }, [])
 
-  return <canvas id="canvas" ref={canvasRef} />
+  return (
+    <canvas
+      id="canvas"
+      ref={canvasRef}
+      className="absolute inset-0 h-100% bg-stone w-100% z-0 "
+    />
+  )
 }
 
 export default Canvas

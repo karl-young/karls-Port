@@ -11,7 +11,7 @@ function App() {
         <header>
           <Header />
           <div>
-          <Canvas />
+            <Canvas />
           </div>
         </header>
         <section>

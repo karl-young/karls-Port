@@ -8,7 +8,7 @@ const Header = () => {
           </h1>
         </div>
         <div className="text-4xl font-Helvetica underline text-neutral ">
-          <p>{"I'm a junior web developer"}</p>
+          <p>{"I'm a web developer"}</p>
         </div>
         <div className="text-1xl underline  ">
           <a

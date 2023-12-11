@@ -39,7 +39,7 @@ class Circle {
     if (this.y + this.radius > window.innerHeight || this.y - this.radius < 0) {
       this.dy = -this.dy
     }
-    const maxSpeed = 5 // Set the maximum speed
+    const maxSpeed = 8 // Set the maximum speed
     if (Math.abs(this.dx) > maxSpeed) {
       this.dx = Math.sign(this.dx) * maxSpeed
     }

@@ -2,14 +2,4 @@
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 
-/* @layer base{
-  .main-bg{
- @apply absolute inset-0  bg-stone w-100% z-0 
-}} */
-/* #canvas {
-  position: absolute;
-  inset: 0px;
-  background-color: #334155;
-  width: 100%;
-  z-index: 999;
-} */
+

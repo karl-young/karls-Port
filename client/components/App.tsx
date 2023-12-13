@@ -1,5 +1,6 @@
 import About from './About'
 import Canvas from './Canvas'
+import Canvas2 from './Canvas-2'
 
 import Header from './Header'
 import NavBar from './NavBar'
@@ -19,6 +20,7 @@ function App() {
           <About />
         </section>
       </section>
+      <Canvas2 />
     </>
   )
 }

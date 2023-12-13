@@ -39,7 +39,7 @@ class Circle {
     if (this.y + this.radius > window.innerHeight || this.y - this.radius < 0) {
       this.dy = -this.dy
     }
-    const maxSpeed = 2 // Set the maximum speed
+    const maxSpeed = 1 // Set the maximum speed
     if (Math.abs(this.dx) > maxSpeed) {
       this.dx = Math.sign(this.dx) * maxSpeed
     }
@@ -52,7 +52,7 @@ class Circle {
   }
 }
 
-const Canvas = () => {
+const Canvas2 = () => {
   const canvasRef = useRef<HTMLCanvasElement | null>(null)
   const circleArrayRef = useRef<Circle[]>([])
   const colors = ['#272932', '#1c7293', '#5b70f3', '#a4fbe3'] // The list of colors
@@ -91,11 +91,11 @@ const Canvas = () => {
   const init = () => {
     circleArrayRef.current = []
     for (let i = 0; i < 100; i++) {
-      const radius = Math.random() * 2 + 1 // set radius
+      const radius = Math.random() * 1 + 1 // set radius
       const x = Math.random() * (window.innerWidth - radius * 2) + radius // set position
       const y = Math.random() * (window.innerHeight - radius * 2) + radius
-      const dx = (Math.random() - 0.5) * 0.5 // set speed
-      const dy = (Math.random() - 0.5) * 0.5 // set speed
+      const dx = (Math.random() - 0.5) * 0.3 // set speed
+      const dy = (Math.random() - 0.5) * 0.3 // set speed
       const color = colors[Math.floor(Math.random() * colors.length)] // set color
       const circle = new Circle(x, y, radius, dx, dy, color) // create new circle
       circleArrayRef.current.push(circle) // push new circle
@@ -134,9 +134,9 @@ const Canvas = () => {
     <canvas
       id="canvas"
       ref={canvasRef}
-      className="absolute inset-0 h-100% bg-stone w-100% z-0 "
+      className="fixed top-0 left-0 h-screen bg-stone w-screen  -z-10 "
     />
   )
 }
 
-export default Canvas
+export default Canvas2

@@ -1,10 +1,24 @@
+import About from './About'
+import Canvas from './Canvas'
+
+import Header from './Header'
+import NavBar from './NavBar'
+
 function App() {
   return (
     <>
-      <header className="header">
-        <h1>My Collection</h1>
-      </header>
-      <section className="main">{/* add your code here */}</section>
+      <section className="main-bg">
+        <header>
+          <Header />
+          <div>
+            <Canvas />
+          </div>
+        </header>
+        <section>
+          <NavBar />
+          <About />
+        </section>
+      </section>
     </>
   )
 }

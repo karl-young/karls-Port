@@ -2,19 +2,19 @@
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 
-.aniLeft {
+.fromLeft {
   animation-name: moveInLeft;
   animation-duration: 1.4s;
   animation-timing-function: cubic-bezier(0.21, 1.11, 0.81, 0.99);
 }
 
-.aniRight {
+.fromRight {
   animation-name: moveInRight;
   animation-duration: 1.4s;
   animation-timing-function: cubic-bezier(0.21, 1.11, 0.81, 0.99);
 }
 
-.aniBottom {
+.fromBottom {
   animation-name: moveInBottom;
   animation-duration: 0.7s 1.2s;
   animation-fill-mode: backwards;

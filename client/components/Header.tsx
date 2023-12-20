@@ -10,13 +10,13 @@ const Header = () => {
         <div className="text-4xl font-Helvetica underline text-neutral fromLeft">
           <p>{"I'm a web developer"}</p>
         </div>
-        <div className="text-4xl font-Helvetica  relative flex justify-center mt-1 py-3 px-12 h-16   ">
+        <div className="text-4xl font-Helvetica fromBottom  flex justify-center mt-1 py-3 px-12 h-16   ">
           <a
             href="#about"
             className="text-neutral flex justify-center items-center text-2xl
-          hover:text-green fromBottom border-solid border-inherit border-2 p-2  rounded-lg "
+            border-solid border-inherit border-2 p-2  rounded-lg hover:-translate-y-1.5 hover:text-green transition-all  duration-500 ease-in-out"
           >
-            &#x21E9;
+            View My Work &#x21E9;
           </a>
         </div>
       </section>

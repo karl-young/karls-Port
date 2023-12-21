@@ -1,8 +1,8 @@
-import About from './About'
 import Canvas from './Canvas'
-
+import Canvas2 from './Canvas-2'
 import Header from './Header'
 import NavBar from './NavBar'
+import Discription from './Discription'
 
 function App() {
   return (
@@ -16,9 +16,10 @@ function App() {
         </header>
         <section>
           <NavBar />
-          <About />
+          <Discription />
         </section>
       </section>
+      <Canvas2 />
     </>
   )
 }

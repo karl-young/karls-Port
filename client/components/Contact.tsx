@@ -23,7 +23,6 @@ const Contact = () => {
               <input type="text" />
               <input type="text" />
               <input type="text" />
-              <input type="text" />
               <button type="submit">Submit</button>
             </form>
           </div>

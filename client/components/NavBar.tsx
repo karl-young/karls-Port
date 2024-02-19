@@ -1,7 +1,7 @@
 const NavBar = () => {
   return (
     <>
-      <nav className="bg-slate-800  opacity-90 sticky top-0 flex h-10 item-center justify-end w-full z-50 ">
+      <nav className="bg-slate-800  opacity-90 sticky top-0 flex h-10 item-center justify-start w-full z-50 ">
         <nav className="flex sm:justify-center space-x-4">
           {[
             ['Home', '/dashboard'],

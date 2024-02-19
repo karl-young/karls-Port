@@ -2,7 +2,7 @@ import Canvas from './Canvas'
 import Canvas2 from './Canvas-2'
 import Header from './Header'
 import NavBar from './NavBar'
-import Discription from './Discription'
+import Description from './Description'
 
 function App() {
   return (
@@ -16,7 +16,7 @@ function App() {
         </header>
         <section>
           <NavBar />
-          <Discription />
+          <Description />
         </section>
       </section>
       <Canvas2 />

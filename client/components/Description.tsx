@@ -5,9 +5,9 @@ const About = () => {
         <article className="p-32 w-full max-w-screen-md z-30 bg-slate-600 rounded-2xl ">
           <div className="">
             <div className="" id="about">
-              <h1>Discription</h1>
+              <h1>Description</h1>
               <p>
-                something about my experiance as a web dev when shrunk all this
+                something about my experience as a web dev when shrunk all this
                 moves to the right on top of a picture or something
               </p>
               <p>

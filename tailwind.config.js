@@ -7,7 +7,14 @@ export default {
       sky: '#bae6fd',
       neutral: '#d6d3d1',
       blue: '#60a5fa',
-      stone: '#0c0a09',
+      stone: {
+        400: '#a8a29e',
+        500: '#78716c',
+        600: '#57534e',
+        700: '#44403c',
+        800: '#292524',
+        900: '#1c1917',
+      },
       slate: {
         600: '#475569',
         700: '#334155',
@@ -21,7 +28,11 @@ export default {
       serif: ['ui-serif', 'Georgia'],
       mono: ['ui-monospace', 'SFMono-Regular'],
     },
-    extend: {},
+    extend: {
+      shadow: {
+        '3xl': '0 35px 60px -15px rgba(255, 0, 255, 0.5)',
+      },
+    },
   },
   plugins: [],
 }

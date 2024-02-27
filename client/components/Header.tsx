@@ -1,7 +1,7 @@
 const Header = () => {
   return (
     <>
-      <section className="relative self-center flex flex-col justify-center item-center w-fit h-screen ml-auto mr-auto z-20 ">
+      <section className="relative self-center flex flex-col flex-nowrap  justify-center item-center w-fit h-screen ml-auto mr-auto z-20 min-w-fit">
         <div
           className="font-Helvetica  text-neutral fromRight transition-all  duration-400 ease-in-out text-4xl pb-0
         lg:text-7xl md:text-6xl sm:text-5xl 

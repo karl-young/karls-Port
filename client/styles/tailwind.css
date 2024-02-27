@@ -22,6 +22,8 @@
   animation-timing-function: cubic-bezier(0.21, 1.11, 0.81, 0.99);
 }
 
+
+
 @keyframes moveInLeft {
   0% {
     opacity: 0;

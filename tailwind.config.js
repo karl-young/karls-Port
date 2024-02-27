@@ -30,7 +30,8 @@ export default {
     },
     extend: {
       shadow: {
-        '3xl': '0 35px 60px -15px rgba(255, 0, 255, 0.5)',
+        xl: '0 35px 60px -15px rgba(255, 0, 255, 0.5)',
+        dark: '0px 3px 22px 0px rgba(0, 0, 0, .7)',
       },
     },
   },

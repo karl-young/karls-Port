@@ -128,7 +128,7 @@ const Snow = () => {
     <canvas
       id="canvas"
       ref={canvasRef}
-      className="absolute inset-0 h-screen bg-stone-800 w-full z-0"
+      className="absolute inset-0 h-screen bg-stone-900 w-full z-0"
       onClick={handleCanvasClick}
     />
   )

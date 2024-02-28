@@ -134,7 +134,7 @@ const Canvas2 = () => {
     <canvas
       id="canvas1"
       ref={canvasRef}
-      className="fixed top-0  left-0 h-screen bg-stone-800 w-full  -z-10"
+      className="fixed top-0  left-0 h-screen bg-stone-900 w-full  -z-10"
     />
   )
 }

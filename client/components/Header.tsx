@@ -3,8 +3,8 @@ const Header = () => {
     <>
       <section className="relative flex flex-col flex-nowrap  justify-center item-center w-fit h-screen ml-auto mr-auto z-20 min-w-fit">
         <div
-          className="font-Helvetica  text-neutral fromRight self-center transition-all  duration-400 ease-in-out text-4xl pb-0
-        lg:text-6xl md:text-5xl sm:text-4xl 
+          className="font-Helvetica  text-neutral fromRight self-center transition-all  duration-400 ease-in-out text-2xl pb-0
+        lg:text-6xl md:text-5xl sm:text-2xl 
         lg:pb-2  md:pb-1 sm:pb-0"
         >
           <h1>

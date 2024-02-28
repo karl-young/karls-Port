@@ -17,7 +17,7 @@ const NavBar = () => {
             href={url}
             className={`px-3 py-2 font-bold text-xl text-neutral  hover:text-green ${
               hoveredButton && hoveredButton !== title
-                ? 'blur-sm duration-500 ease-in-out'
+                ? ' duration-500 text-slate-700 ease-in-out'
                 : ''
             }`}
             onMouseEnter={() => setHoveredButton(title)}

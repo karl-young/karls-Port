@@ -8,22 +8,19 @@ import Tilt from './Tilt'
 function App() {
   return (
     <>
-      <section className="main-bg">
-        <header>
-          <Header />
-          <div>
+      <div>
+        <section>
+          <header>
+            <Header />
             <Canvas />
-          </div>
-        </header>
+          </header>
+        </section>
         <section>
           <NavBar />
-          <section>
-          
           <Description />
-          </section>
         </section>
-      </section>
-      <Canvas2 />
+        <Canvas2 />
+      </div>
     </>
   )
 }

@@ -1,10 +1,10 @@
 const Header = () => {
   return (
     <>
-      <section className="relative self-center flex flex-col flex-nowrap  justify-center item-center w-fit h-screen ml-auto mr-auto z-20 min-w-fit">
+      <section className="relative flex flex-col flex-nowrap  justify-center item-center w-fit h-screen ml-auto mr-auto z-20 min-w-fit">
         <div
-          className="font-Helvetica  text-neutral fromRight transition-all  duration-400 ease-in-out text-4xl pb-0
-        lg:text-7xl md:text-6xl sm:text-5xl 
+          className="font-Helvetica  text-neutral fromRight self-center transition-all  duration-400 ease-in-out text-4xl pb-0
+        lg:text-6xl md:text-5xl sm:text-4xl 
         lg:pb-2  md:pb-1 sm:pb-0"
         >
           <h1>
@@ -13,7 +13,7 @@ const Header = () => {
         </div>
         <div
           className=" font-Helvetica  text-neutral fromLeft transition-all  duration-300 ease-in-out
-        lg:text-4xl md:text-3xl sm:text-2xl
+        lg:text-5xl md:text-3xl sm:text-2xl
         lg:pb-2  md:pb-1 sm:pb-0"
         >
           <p>{"I'm a full stack web developer"}</p>

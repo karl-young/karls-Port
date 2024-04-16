@@ -5,6 +5,7 @@ import NavBar from './NavBar'
 import Description from './Description'
 import Snow from './Snow'
 import { useState } from 'react'
+import Skills from './Skills'
 
 function App() {
   const [showCanvas, setShowCanvas] = useState(true)
@@ -38,6 +39,9 @@ function App() {
         <section>
           <NavBar />
           <Description />
+        </section>
+        <section>
+          <Skills />
         </section>
         <Canvas2 />
       </div>

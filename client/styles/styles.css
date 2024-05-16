@@ -1,7 +1,26 @@
 .button-container {
-  position: absolute;
+  max-width: fit-content;
+  position: relative;
   top: 25px;
   left: 25px;
+  transform: translateX(-10rem);
+  animation: moveInLeft 2s ease-out forwards;
+  animation-delay: 2s;
+}
+
+.button-container:hover .brackets {
+  transform: translateY(-0.5rem);
+  color: green;
+}
+
+.button-container .brackets {
+  transition: all 300ms ease-in-out;
+}
+
+.brackets {
+  font-size: 20px;
+  color: #d6d3d1;
+  margin: 0 5px;
 }
 
 .button {
@@ -14,6 +33,14 @@
 .snowflake-container {
   display: flex;
   align-items: center;
+}
+
+.button-container:hover .snowflake {
+  transform: translateY(-0.5rem);
+}
+
+.button-container .snowflake {
+  transition: all 300ms ease-in-out;
 }
 
 .snowflake {
@@ -36,12 +63,6 @@
   100% {
     transform: rotate(360deg);
   }
-}
-
-.brackets {
-  font-size: 20px;
-  color: gray;
-  margin: 0 5px; /* Adjust margin for brackets */
 }
 
 @keyframes moveInLeft {

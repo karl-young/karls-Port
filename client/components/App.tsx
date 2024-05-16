@@ -14,13 +14,11 @@ function App() {
     setShowCanvas(!showCanvas)
   }
 
-  
   return (
     <>
       <div>
         <section>
           <header>
-            <Header />
             {showCanvas ? <Canvas /> : <Snow />}
             <div className="button-container">
               <button
@@ -28,12 +26,13 @@ function App() {
                 onClick={toggleCanvas}
               >
                 <div className="snowflake-container">
-                  <div className="brackets">{'<\u00A0'}</div>
-                  <div className="snowflake" />
-                  <div className="brackets">{`\u00A0>`}</div>
+                  <div className="brackets ">{'<\u00A0'}</div>
+                  <div className="snowflake" ></div>
+                  <div className="brackets ">{`\u00A0>`}</div>
                 </div>
               </button>
             </div>
+            <Header />
           </header>
         </section>
         <section>

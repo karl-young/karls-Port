@@ -26,8 +26,8 @@ const Header = () => {
         >
           <a
             href="#about"
-            className="text-neutral flex justify-center items-center 
-            border-solid border-inherit border-2 p-2  rounded-lg hover:-translate-y-1.5 hover:text-green transition-all  duration-400 ease-in-out"
+            className=" smooth text-neutral flex justify-center items-center 
+            border-solid border-inherit border-2 p-2  rounded-lg hover:-translate-y-1.5 hover:text-green"
           >
             View My Work &#x21E9;
           </a>

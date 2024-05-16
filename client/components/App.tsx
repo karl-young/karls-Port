@@ -39,8 +39,8 @@ function App() {
           <NavBar />
           <Description />
         </section>
-        <section>
           <Skills />
+        <section>
         </section>
         <Background />
       </div>

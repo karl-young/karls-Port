@@ -53,7 +53,7 @@ class Circle {
 const Snow = () => {
   const canvasRef = useRef<HTMLCanvasElement | null>(null)
   const circleArrayRef = useRef<Circle[]>([])
-  const colors = ['#272932', '#1c7293', '#5b70f3', '#a4fbe3'] // The list of colors
+  const colors = ['#a9b5e8', '#1c7293', '#8df2d9', '#a4fbe3', '#d5e6e1'] // The list of colors
 
   const [addGravity, setAddGravity] = useState(false)
 

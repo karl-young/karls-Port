@@ -1,5 +1,5 @@
 import Canvas from './Canvas'
-import Canvas2 from './Canvas-2'
+import Background from './BackCanvas'
 import Header from './Header'
 import NavBar from './NavBar'
 import Description from './Description'
@@ -43,7 +43,7 @@ function App() {
         <section>
           <Skills />
         </section>
-        <Canvas2 />
+        <Background />
       </div>
     </>
   )

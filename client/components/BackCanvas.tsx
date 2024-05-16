@@ -52,10 +52,10 @@ class Circle {
   }
 }
 
-const Canvas2 = () => {
+const Background = () => {
   const canvasRef = useRef<HTMLCanvasElement | null>(null)
   const circleArrayRef = useRef<Circle[]>([])
-  const colors = ['#272932', '#1c7293', '#5b70f3', '#a4fbe3'] // The list of colors
+  const colors = ['#a9b5e8', '#1c7293', '#5b70f3', '#a4fbe3', '#d5e6e1'] // The list of colors
 
   const resizeCanvas = () => {
     const canvas = canvasRef.current
@@ -71,11 +71,8 @@ const Canvas2 = () => {
   const animate = () => {
     requestAnimationFrame(animate)
     const canvas = canvasRef.current
-    if (!canvas) {
-      console.log('Not Canvas')
-      return
-    }
-    const context = canvas.getContext('2d')
+
+    const context = canvas?.getContext('2d')
     if (!context) {
       console.log('No Context 2d')
       return
@@ -139,4 +136,4 @@ const Canvas2 = () => {
   )
 }
 
-export default Canvas2
+export default Background

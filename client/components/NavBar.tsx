@@ -15,8 +15,8 @@ const NavBar = () => {
           {[
             ['Home', '#home'],
             ['About Me', '#about'],
-            ['Projects', '#projects'],
-            ['Contact', '#contact'],
+            ['My Projects', '#projects'],
+            ['Contact Info', '#contact'],
           ].map(([title, url]) => (
             <a
               key={url}
@@ -42,37 +42,38 @@ const NavBar = () => {
       {isModalOpen ? (
         <div className="fixed inset-0 flex items-center justify-center z-50">
           {/* Modal Backdrop */}
-          <div className="fixed inset-0 bg-black bg-opacity-50"></div>
+          <div className="fixed backdrop-blur-sm inset-0 bg-black bg-opacity-50"></div>
 
           {/* Modal Container */}
-          <div className="bg-slate-700 rounded-lg p-4 transform transition-transform duration-500 ease-in-out translate-y-16 opacity-0 animate-showModal">
-            <div className="flex justify-end">
+          <div className="bg-slate-700 text-neutral rounded-md p-4 transform transition-transform duration-500 ease-in-out translate-y-16 opacity-0 animate-showModal">
+            <div className="flex justify-end  ">
               <button
                 onClick={toggleModal}
-                className="text-neutral absolute top-2 right-4 hover:text-red"
+                className="text-neutral absolute top-0 right-2 hover:text-red "
               >
                 &times;
               </button>
             </div>
-            <h2 className="text-2xl p-4 mb-4">Contact Information</h2>
-            <p>Here is the contact information...</p>
-            <div>
-              <h3>Email:</h3>
-              <p></p>
+              <h2 className="text-2xl text-green font-bold font-Helvetica p-2 ">Hello, Karl here!</h2>
+              <p>Here is the contact information...</p>
+            <div className="border-2 border-slate-800">
+              <div className="bg-slate-700">
+                <h3>Email:</h3>
+                <p></p>
+              </div>
+              <div>
+                <h3>Linked in</h3>
+                <p></p>
+              </div>
+              <div>
+                <h3>Github</h3>
+                <p></p>
+              </div>
+              <div>
+                <h3>Discord Username</h3>
+                <p></p>
+              </div>
             </div>
-            <div>
-              <h3>Linked in</h3>
-              <p></p>
-            </div>
-            <div>
-              <h3>Github</h3>
-              <p></p>
-            </div>
-            <div>
-              <h3>Discord Username</h3>
-              <p></p>
-            </div>
-            {/* Add your contact information here */}
           </div>
         </div>
       ) : null}

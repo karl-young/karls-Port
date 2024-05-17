@@ -48,6 +48,51 @@
   }
 }
 
+.animate-showModal {
+  animation: showModal 0.5s forwards ease-in-out;
+}
+
+.animate-hideModal {
+  animation: hideModal 0.5s forwards ease-in-out;
+}
+
+@keyframes bounceIn {
+  0%,
+  20%,
+  40%,
+  60%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+  25% {
+    transform: translateY(-20px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  75% {
+    transform: translateY(-5px);
+  }
+}
+
+@keyframes bounceOut {
+  0% {
+    transform: translateY(0);
+  }
+  25% {
+    transform: translateY(-5px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  75% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(100%);
+  }
+}
 
 @keyframes showModal {
   0% {
@@ -58,8 +103,4 @@
     transform: translateY(0);
     opacity: 1;
   }
-}
-
-.animate-showModal {
-  animation: showModal 0.5s forwards;
 }

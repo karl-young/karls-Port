@@ -39,23 +39,43 @@ const NavBar = () => {
         </div>
       </nav>
 
-      {isModalOpen && (
-        <div className=" fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50">
-          <div className="bg-slate-700 rounded-lg p-8 transform transition-transform duration-500 ease-in-out translate-y-16 opacity-0 animate-showModal">
+      {isModalOpen ? (
+        <div className="fixed inset-0 flex items-center justify-center z-50">
+          {/* Modal Backdrop */}
+          <div className="fixed inset-0 bg-black bg-opacity-50"></div>
+
+          {/* Modal Container */}
+          <div className="bg-slate-700 rounded-lg p-4 transform transition-transform duration-500 ease-in-out translate-y-16 opacity-0 animate-showModal">
             <div className="flex justify-end">
               <button
                 onClick={toggleModal}
-                className="text- hover:text-gray-700"
+                className="text-neutral absolute top-2 right-4 hover:text-red"
               >
                 &times;
               </button>
             </div>
-            <h2 className="text-2xl mb-4">Contact Information</h2>
+            <h2 className="text-2xl p-4 mb-4">Contact Information</h2>
             <p>Here is the contact information...</p>
+            <div>
+              <h3>Email:</h3>
+              <p></p>
+            </div>
+            <div>
+              <h3>Linked in</h3>
+              <p></p>
+            </div>
+            <div>
+              <h3>Github</h3>
+              <p></p>
+            </div>
+            <div>
+              <h3>Discord Username</h3>
+              <p></p>
+            </div>
             {/* Add your contact information here */}
           </div>
         </div>
-      )}
+      ) : null}
     </>
   )
 }

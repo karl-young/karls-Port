@@ -2,11 +2,19 @@
 export default {
   content: ['./client/**/*.{ts,tsx}', './index.html'],
   theme: {
+    screens: {
+      sm: '640px',
+      md: '768px',
+      lg: '1024px',
+      xl: '1280px',
+      '2xl': '1536px',
+    },
     colors: {
       green: '#15803d',
       sky: '#bae6fd',
       neutral: '#d6d3d1',
       blue: '#60a5fa',
+      red: '#dc2626',
       stone: {
         400: '#a8a29e',
         500: '#78716c',

@@ -3,9 +3,26 @@ import { useState } from 'react'
 const NavBar = () => {
   const [hoveredButton, setHoveredButton] = useState('')
   const [isModalOpen, setIsModalOpen] = useState(false)
+  const [isModalExpanded, setIsModalExpanded] = useState(false)
+  const [isModalMinimized, setIsModalMinimized] = useState(false)
 
   const toggleModal = () => {
     setIsModalOpen(!isModalOpen)
+    setIsModalExpanded(false) // Reset state when modal is toggled
+    setIsModalMinimized(false) // Reset state when modal is toggled
+  }
+
+  const handleExpand = () => {
+    setIsModalExpanded(!isModalExpanded)
+    setIsModalMinimized(false) // Ensure it is not minimized when expanded
+  }
+
+  const handleMinimize = () => {
+    setIsModalMinimized(!isModalMinimized)
+  }
+
+  const handleRestore = () => {
+    setIsModalMinimized(false)
   }
 
   return (
@@ -39,44 +56,82 @@ const NavBar = () => {
         </div>
       </nav>
 
-      {isModalOpen ? (
+      {isModalOpen && !isModalMinimized && (
         <div className="fixed inset-0 flex items-center justify-center z-50">
           {/* Modal Backdrop */}
           <div className="fixed backdrop-blur-sm inset-0 bg-black bg-opacity-50"></div>
 
           {/* Modal Container */}
-          <div className="bg-slate-700 text-neutral rounded-md p-4 transform transition-transform duration-500 ease-in-out translate-y-16 opacity-0 animate-showModal">
-            <div className="flex justify-end  ">
-              <button
-                onClick={toggleModal}
-                className="text-neutral absolute top-0 right-2 hover:text-red "
-              >
-                &times;
-              </button>
+          <div
+            className={`bg-slate-700 text-neutral rounded-md shadow-2xl transform transition-transform duration-500 ease-in-out ${
+              isModalExpanded ? 'w-full h-full' : 'w-1/2 h-3/4'
+            } translate-y-16 opacity-0 animate-showModal`}
+          >
+            <div className="flex bg-slate-800 justify-between  items-center rounded-md mb-4">
+              <h2 className="text-2xl ml-2 bg-slate-700 rounded-t-lg text-green font-bold font-Helvetica">
+                Contact Information
+              </h2>
+              <div className="flex mr-2 space-x-1 ">
+                <button
+                  onClick={handleMinimize}
+                  className=" hover:text-yellow hover:bg-slate-700 p-1 font-bold  "
+                  title="Minimize"
+                >
+                  {'\u2013'}
+                </button>
+                <button
+                  onClick={handleExpand}
+                  className=" hover:text-blue hover:bg-slate-700 p-1 "
+                  title={isModalExpanded ? 'Restore' : 'Expand'}
+                >
+                  {isModalExpanded ? '🗗' : '🗖'}
+                </button>
+                <button
+                  onClick={toggleModal}
+                  className="hover:text-red hover:bg-slate-700 p-1"
+                  title="Close"
+                >
+                  ✕
+                </button>
+              </div>
             </div>
-              <h2 className="text-2xl text-green font-bold font-Helvetica p-2 ">Hello, Karl here!</h2>
-              <p>Here is the contact information...</p>
-            <div className="border-2 border-slate-800">
-              <div className="bg-slate-700">
+            <div className="ml-3 ">
+              <p>Here is how you can reach me</p>
+            </div>
+            <div className="border-2 border-slate-800 p-4">
+              <div className="mb-4">
                 <h3>Email:</h3>
-                <p></p>
+                <p>example@example.com</p>
               </div>
-              <div>
-                <h3>Linked in</h3>
-                <p></p>
+              <div className="mb-4">
+                <h3>LinkedIn:</h3>
+                <p>linkedin.com/in/example</p>
               </div>
-              <div>
-                <h3>Github</h3>
-                <p></p>
+              <div className="mb-4">
+                <h3>GitHub:</h3>
+                <p>github.com/example</p>
               </div>
-              <div>
-                <h3>Discord Username</h3>
-                <p></p>
+              <div className="mb-4">
+                <h3>Discord Username:</h3>
+                <p>example#1234</p>
               </div>
             </div>
           </div>
         </div>
-      ) : null}
+      )}
+
+      {isModalMinimized && (
+        <div className="fixed smooth bottom-5 left-1/2 transform -translate-x-1/2 z-50">
+          <button
+            onClick={handleRestore}
+            className="flex items-center space-x-1"
+          >
+            <div className="text-white">{'<\u00A0'}</div>
+            <div className="snowflake"></div>
+            <div className="text-white">{`\u00A0>`}</div>
+          </button>
+        </div>
+      )}
     </>
   )
 }

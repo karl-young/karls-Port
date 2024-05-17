@@ -8,7 +8,7 @@ const NavBar = () => {
       <nav className="flex flex-grow justify-end space-x-4">
         {[
           ['Home', '/dashboard'],
-          ['About', '/About'],
+          ['About Me', '/About'],
           ['Projects', '/projects'],
           ['Contact', '/Contact'],
         ].map(([title, url]) => (

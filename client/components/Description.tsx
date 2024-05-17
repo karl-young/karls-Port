@@ -2,14 +2,14 @@ const Description = () => {
   return (
     <section className="relative h-screen px-10 flex justify-center items-center gap-3 py-52">
       <article
-        id="about"
+        id="About"
         className="p-8 max-w-screen-md bg-slate-600 rounded-2xl relative z-10
         lg:p-16 md:p-12 sm:p-8"
       >
-        <div>
+        <div className="text-neutral">
           <h1>About Me</h1>
         </div>
-        <div>
+        <div className="text-neutral">
           <p>
             Welcome to my portfolio! I&apos;m Karl, a dedicated full stack web
             developer with a passion for creating innovative digital solutions.

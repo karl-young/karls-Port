@@ -3,26 +3,16 @@
 @import 'tailwindcss/utilities';
 
 .fromLeft {
-  animation-name: moveInLeft;
-  animation-duration: 1.4s;
-  animation-timing-function: cubic-bezier(0.21, 1.11, 0.81, 0.99);
+  animation: moveInLeft 1.4s cubic-bezier(0.21, 1.11, 0.81, 0.99);
 }
 
 .fromRight {
-  animation-name: moveInRight;
-  animation-duration: 1.4s;
-  animation-timing-function: cubic-bezier(0.21, 1.11, 0.81, 0.99);
+  animation: moveInRight 1.4s cubic-bezier(0.21, 1.11, 0.81, 0.99);
 }
 
 .fromBottom {
-  animation-name: moveInBottom;
-  animation-delay: 1.8s;
-  animation-fill-mode: backwards;
-  animation-duration: 1s ;
-  animation-timing-function: cubic-bezier(0.21, 1.11, 0.81, 0.99);
+  animation: moveInBottom 1s cubic-bezier(0.21, 1.11, 0.81, 0.99) backwards 1.8s;
 }
-
-
 
 @keyframes moveInLeft {
   0% {
@@ -57,4 +47,3 @@
     transform: translateY(0);
   }
 }
-

@@ -4,8 +4,7 @@
   top: 25px;
   left: 25px;
   transform: translateX(-10rem);
-  animation: moveInLeft 2s ease-out forwards;
-  animation-delay: 2s;
+  animation: moveInLeft 2s ease-out forwards 2s;
 }
 
 .button-container:hover .brackets {
@@ -51,8 +50,7 @@
 }
 
 .spin-animation {
-  animation: spin 4s linear infinite;
-  animation-iteration-count: 1;
+  animation: spin 4s linear 1;
 }
 
 .moveInLeft {

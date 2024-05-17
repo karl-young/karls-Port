@@ -17,7 +17,7 @@ function App() {
   return (
     <>
       <div>
-        <section>
+        <section id="home">
           <header>
             {showCanvas ? <Canvas /> : <Snow />}
             <div className="button-container">
@@ -27,7 +27,7 @@ function App() {
               >
                 <div className="snowflake-container">
                   <div className="brackets ">{'<\u00A0'}</div>
-                  <div className="snowflake" ></div>
+                  <div className="snowflake"></div>
                   <div className="brackets ">{`\u00A0>`}</div>
                 </div>
               </button>
@@ -35,13 +35,15 @@ function App() {
             <Header />
           </header>
         </section>
-        <section>
+        <section id="about">
           <NavBar />
           <Description />
         </section>
+        <section id="skills">
           <Skills />
-        <section>
         </section>
+        <section id="projects"></section>
+        
         <Background />
       </div>
     </>

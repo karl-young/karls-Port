@@ -47,3 +47,19 @@
     transform: translateY(0);
   }
 }
+
+
+@keyframes showModal {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.animate-showModal {
+  animation: showModal 0.5s forwards;
+}

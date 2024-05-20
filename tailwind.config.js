@@ -10,9 +10,9 @@ export default {
       '2xl': '1536px',
     },
     colors: {
-      green: '#15803d',
+      green: '#06B246',
       sky: '#bae6fd',
-      neutral: '#d6d3d1',
+      neutral: '#f8fafc',
       blue: '#60a5fa',
       red: '#dc2626',
       yellow: '#eab308',

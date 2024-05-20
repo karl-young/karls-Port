@@ -16,7 +16,7 @@ const Header = () => {
         lg:text-5xl md:text-3xl sm:text-2xl
         lg:pb-2  md:pb-1 sm:pb-0"
         >
-          <p>{"I'm a full stack web developer"}</p>
+          <h2>I&apos;m a full stack web developer</h2>
         </div>
         <div
           className="font-Helvetica fromBottom flex justify-center mt-0 py-1 px-14 h-6 

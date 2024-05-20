@@ -56,9 +56,15 @@
 .moveInLeft {
   animation: moveInLeft 2s ease-out; /* Applies the moveInLeft animation */
 }
+
 .smooth {
   transition: all 300ms ease-in-out;
 }
+
+.custom-height {
+  height: clamp(28em, 80vh, 36em);
+}
+
 
 @keyframes spin {
   100% {

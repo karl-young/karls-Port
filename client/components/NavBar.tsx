@@ -63,18 +63,18 @@ const NavBar = () => {
 
           {/* Modal Container */}
           <div
-            className={`bg-slate-700 text-neutral rounded-md shadow-2xl transform transition-transform duration-500 ease-in-out ${
-              isModalExpanded ? 'w-full h-full' : 'w-1/2 h-3/4'
+            className={`bg-slate-600 text-neutral rounded-md shadow-2xl transform transition-transform duration-500 ease-in-out ${
+              isModalExpanded ? 'w-full h-full' : 'w-1/2 h-auto'
             } translate-y-16 opacity-0 animate-showModal`}
           >
-            <div className="flex bg-slate-800 justify-between  items-center rounded-md mb-4">
-              <h2 className="text-2xl ml-2 bg-slate-700 rounded-t-lg text-green font-bold font-Helvetica">
-                Contact Information
+            <div className="flex bg-slate-800 justify-between  items-center rounded-md  mb-4">
+              <h2 className="text-2xl px-2 ml-2 bg-slate-700 rounded-t-lg text-green font-bold font-Helvetica">
+                My Contact Information
               </h2>
               <div className="flex mr-2 space-x-1 ">
                 <button
                   onClick={handleMinimize}
-                  className=" hover:text-yellow hover:bg-slate-700 p-1 font-bold  "
+                  className=" hover:text-yellow hover:bg-slate-700 p-1 font-bold"
                   title="Minimize"
                 >
                   {'\u2013'}
@@ -95,23 +95,24 @@ const NavBar = () => {
                 </button>
               </div>
             </div>
-            <div className="ml-3 ">
-              <p>Here is how you can reach me</p>
+            <div className="ml-4 mb-2 ">
+              <h2 className="text-green font-bold text-xl">Hi, Karl here!</h2>
+              <h3>This is how you can reach me:</h3>
             </div>
-            <div className="border-2 border-slate-800 p-4">
-              <div className="mb-4">
+            <div className="border-2 m-4 border-slate-800 shadow-xl  bg-slate-700">
+              <div className="mb-4 p-4 bg-slate-600">
                 <h3>Email:</h3>
-                <p>example@example.com</p>
+                <p>Karlyoung112@gmail.com</p>
               </div>
-              <div className="mb-4">
+              <div className="mb-4 p-4 ">
                 <h3>LinkedIn:</h3>
                 <p>linkedin.com/in/example</p>
               </div>
-              <div className="mb-4">
+              <div className="mb-4 p-4 bg-slate-600">
                 <h3>GitHub:</h3>
-                <p>github.com/example</p>
+                <a className='hover:text-green' href="https://github.com/karl-young">My GitHub</a>
               </div>
-              <div className="mb-4">
+              <div className="mb-4 p-4">
                 <h3>Discord Username:</h3>
                 <p>example#1234</p>
               </div>

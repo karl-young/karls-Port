@@ -73,14 +73,14 @@ const skills = [
 
 const Skills = () => {
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen bg-slate-700 text-neutral">
+    <div className="flex flex-col items-center justify-center min-h-screen  text-neutral">
       <div className="max-w-4xl px-4 text-center">
-        <h1 className="text-3xl font-bold mb-4">My Skills</h1>
+        <h1 className="text-3xl text-green font-bold mb-4">My Skills</h1>
         <p className="text-lg text-neutral-light mb-8">
           These skills form the foundation of my technical journey. I am passionate about expanding my knowledge and embracing new technologies as they emerge. The tech world is vast and constantly evolving.
         </p>
       </div>
-      <div className="flex flex-wrap justify-center gap-8">
+      <div className="flex flex-wrap  justify-center gap-14 bg-slate-700 p-10 max-w-[800px] rounded-2xl">
         {skills.map((skill, index) => (
           <div key={index} className="flex flex-col items-center">
             <img

@@ -1,7 +1,7 @@
 const skills = [
   {
     name: 'HTML',
-    src: 'client/styles/images/html-5-svgrepo-com.svg',
+    src: 'client/styles/images/html-svgrepo-com.svg',
     alt: 'HTML logo',
   },
   {
@@ -30,11 +30,6 @@ const skills = [
     alt: 'GitHub logo',
   },
   {
-    name: 'NPM',
-    src: 'client/styles/images/npm-svgrepo-com.svg',
-    alt: 'NPM logo',
-  },
-  {
     name: 'Node.js',
     src: 'client/styles/images/node-js-svgrepo-com.svg',
     alt: 'Node.js logo',
@@ -53,11 +48,6 @@ const skills = [
     name: 'Vite',
     src: 'client/styles/images/vite-svgrepo-com.svg',
     alt: 'Vite logo',
-  },
-  {
-    name: 'VS Code',
-    src: 'client/styles/images/vscode-svgrepo-com.svg',
-    alt: 'VS Code logo',
   },
   {
     name: 'SQLite',
@@ -83,24 +73,28 @@ const skills = [
 
 const Skills = () => {
   return (
-    <>
-      <div>
-        <h1>My Skills</h1>
+    <div className="flex flex-col items-center justify-center min-h-screen bg-slate-700 text-neutral">
+      <div className="max-w-4xl px-4 text-center">
+        <h1 className="text-3xl font-bold mb-4">My Skills</h1>
+        <p className="text-lg text-neutral-light mb-8">
+          These skills form the foundation of my technical journey. I am passionate about expanding my knowledge and embracing new technologies as they emerge. The tech world is vast and constantly evolving.
+        </p>
       </div>
-      <div className="bg-natural flex flex-row flex-wrap justify-center">
+      <div className="flex flex-wrap justify-center gap-8">
         {skills.map((skill, index) => (
-          <div key={index} className="flex flex-col items-center m-4">
+          <div key={index} className="flex flex-col items-center">
             <img
               src={skill.src}
               alt={skill.alt}
-              className="w-20 h-20 border-slate-700 bg-neutral rounded-full"
+              className="w-20 h-20 border border-neutral rounded-full"
             />
-            <h3>{skill.name}</h3>
+            <h2 className="text-lg mt-2">{skill.name}</h2>
           </div>
         ))}
       </div>
-    </>
-  )
-}
+    </div>
+  );
+};
 
-export default Skills
+export default Skills;
+

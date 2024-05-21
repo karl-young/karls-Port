@@ -1,3 +1,5 @@
+import { useState } from 'react'
+
 const skills = [
   {
     name: 'HTML',
@@ -72,29 +74,50 @@ const skills = [
 ]
 
 const Skills = () => {
+  const [hoveredSkill, setHoveredSkill] = useState<number | null>(null)
+
+  const handleMouseEnter = (index: number) => {
+    setHoveredSkill(index)
+  }
+
+  const handleMouseLeave = () => {
+    setHoveredSkill(null)
+  }
+
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen  text-neutral">
-      <div className="max-w-4xl px-4 text-center">
+    <div className="flex flex-col items-center justify-center min-h-1/2 text-neutral">
+      <div className="max-w-5xl px-4">
         <h1 className="text-3xl text-green font-bold mb-4">My Skills</h1>
-        <p className="text-lg text-neutral-light mb-8">
-          These skills form the foundation of my technical journey. I am passionate about expanding my knowledge and embracing new technologies as they emerge. The tech world is vast and constantly evolving.
+        <p className="text-lg text-neutral mb-8">
+          These skills form the foundation of my technical journey. I am
+          passionate about expanding my knowledge and embracing new technologies
+          as they emerge. The tech world is vast and constantly evolving.
         </p>
       </div>
-      <div className="flex flex-wrap  justify-center gap-14 bg-slate-700 p-10 max-w-[800px] rounded-2xl">
-        {skills.map((skill, index) => (
-          <div key={index} className="flex flex-col items-center">
-            <img
-              src={skill.src}
-              alt={skill.alt}
-              className="w-20 h-20 border border-neutral rounded-full"
-            />
-            <h2 className="text-lg mt-2">{skill.name}</h2>
-          </div>
-        ))}
+      <div className="flex flex-col items-center justify-center min-h-1/2 pb-10 text-neutral">
+        <div className="flex flex-wrap justify-center gap-14 bg-slate-700 p-10 max-w-[800px] rounded-2xl">
+          {skills.map((skill, index) => (
+            <div
+              key={index}
+              className="flex flex-col items-center relative"
+              onMouseEnter={() => handleMouseEnter(index)}
+              onMouseLeave={handleMouseLeave}
+            >
+              <img
+                src={skill.src}
+                alt={skill.alt}
+                className="w-20 h-20 p-2 border border-neutral rounded-full transition-transform duration-300"
+                style={{
+                  transform: hoveredSkill === index ? 'scale(1.1)' : 'scale(1)',
+                }}
+              />
+              <h2 className="text-lg mt-2">{skill.name}</h2>
+            </div>
+          ))}
+        </div>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default Skills;
-
+export default Skills

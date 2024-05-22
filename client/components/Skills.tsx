@@ -106,18 +106,23 @@ const Skills = () => {
               <img
                 src={skill.src}
                 alt={skill.alt}
-                className="w-20 h-20 p-2 border border-neutral rounded-full transition-transform duration-300"
+                className={`w-20 h-20 p-2 border border-neutral rounded-full transition-transform duration-300 ${hoveredSkill === index ? 'spin' : ''}`}
                 style={{
-                  transform: hoveredSkill === index ? 'scale(1.1)' : 'scale(1)',
+                  transform: hoveredSkill === index ? 'scale(1.2)' : 'scale(1)',
                 }}
               />
               <h2 className="text-lg mt-2">{skill.name}</h2>
+              {hoveredSkill === index && (
+                <div className="absolute bottom-0 transform -translate-y-full opacity-0 transition-opacity duration-300">
+                  <p className="text-sm">Additional information about {skill.name}</p>
+                </div>
+              )}
             </div>
           ))}
         </div>
       </div>
     </div>
-  )
+  );
 }
 
 export default Skills

@@ -91,7 +91,8 @@ const Skills = () => {
         <p className="text-lg text-neutral mb-8">
           These skills form the foundation of my technical journey. I am
           passionate about expanding my knowledge and embracing new technologies
-          as they emerge. The tech world is vast and constantly evolving.
+          as they emerge. The tech world is vast and constantly evolving, and I
+          am committed to continually learning and growing in my field.
         </p>
       </div>
       <div className="flex flex-col items-center justify-center min-h-1/2 pb-10 text-neutral">
@@ -106,23 +107,17 @@ const Skills = () => {
               <img
                 src={skill.src}
                 alt={skill.alt}
-                className={`w-20 h-20 p-2 border border-neutral rounded-full transition-transform duration-300 ${hoveredSkill === index ? 'spin' : ''}`}
-                style={{
-                  transform: hoveredSkill === index ? 'scale(1.2)' : 'scale(1)',
-                }}
+                className={`w-20 h-20 p-2 border border-neutral rounded-full transition-transform duration-300 ${
+                  hoveredSkill === index ? 'spin' : ''
+                }`}
               />
               <h2 className="text-lg mt-2">{skill.name}</h2>
-              {hoveredSkill === index && (
-                <div className="absolute bottom-0 transform -translate-y-full opacity-0 transition-opacity duration-300">
-                  <p className="text-sm">Additional information about {skill.name}</p>
-                </div>
-              )}
             </div>
           ))}
         </div>
       </div>
     </div>
-  );
+  )
 }
 
 export default Skills

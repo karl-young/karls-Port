@@ -82,6 +82,10 @@
   }
 }
 
+.spin {
+  animation: spinLikeCoin 1.5s linear infinite;
+}
+
 @keyframes spinLikeCoin {
   0% {
     transform: perspective(800px) rotateY(0deg);
@@ -94,6 +98,3 @@
   }
 }
 
-.spin {
-  animation: spinLikeCoin 1.5s linear infinite;
-}

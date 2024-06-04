@@ -6,6 +6,7 @@ import Description from './Description'
 import Snow from './Snow'
 import { useState } from 'react'
 import Skills from './Skills'
+import Projects from './Projects'
 
 function App() {
   const [showCanvas, setShowCanvas] = useState(true)
@@ -42,7 +43,9 @@ function App() {
         <section id="skills">
           <Skills />
         </section>
-        <section id="projects"></section>
+        <section id="projects">
+          {/* <Projects /> */}
+        </section>
         
         <Background />
       </div>

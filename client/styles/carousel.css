@@ -2,9 +2,10 @@
 
 :root {
   --font-family: 'Poppins', sans-serif;
-  --color-bg: darkslategrey;
+  --color-bg: #334155;
   --color-text: white;
-  --color-primary: #00beef;
+  --color-altText: black;
+  --color-primary: #06B246;
   --color-accent: #f1683a;
   --border-radius: 20px;
   --animation-duration: 0.5s;
@@ -14,7 +15,7 @@
 /* carousel */
 
 .carousel {
-  border: #00beef 5px solid;
+  border: var(--color-bg) 5px solid;
   border-radius: var(--border-radius);
   height: 800px;
   width: 1200px;
@@ -39,15 +40,15 @@
 
 .carousel .list .item .content {
   position: absolute;
-  top: 20%;
+  top: 5%;
   width: 1140px;
   max-width: 80%;
-  left: 50%;
+  left: 44%;
   transform: translateX(-50%);
   padding-right: 30%;
   box-sizing: border-box;
-  color: #fff;
-  text-shadow: 0 5px 10px #0004;
+  color: var(--color-text);
+  text-shadow: 0 5px 10px var(--color-bg);
 }
 
 .carousel .list .item .author {
@@ -85,7 +86,7 @@
 
 .carousel .list .item .buttons button:nth-child(2) {
   background-color: transparent;
-  border: 1px solid #fff;
+  border: 1px solid var(--color-text);
   color: var(--color-text);
 }
 
@@ -116,7 +117,7 @@
 }
 
 .thumbnail .item .content {
-  color: #fff;
+  color: var(--color-text);
   position: absolute;
   bottom: 10px;
   left: 10px;
@@ -135,8 +136,8 @@
 
 .arrows {
   position: absolute;
-  top: 80%;
-  right: 52%;
+  top: 88%;
+  right: 71%;
   z-index: 100;
   width: 300px;
   max-width: 30%;
@@ -151,7 +152,7 @@
   border-radius: 50%;
   background-color: #eee4;
   border: none;
-  color: #fff;
+  color: var(--color-text);
   font-family: monospace;
   font-weight: bold;
   transition: background-color var(--animation-duration);
@@ -159,7 +160,7 @@
 
 .arrows button:hover {
   background-color: var(--color-primary);
-  color: #000;
+  color: var(--color-altText);
 }
 
 /* animation */

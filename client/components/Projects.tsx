@@ -1,10 +1,9 @@
 import { useState, useEffect, useCallback, SetStateAction } from 'react'
 
-
 const Projects = () => {
   const [sliderItems, setSliderItems] = useState([
     {
-      src: 'images/1thargoid.jpg',
+      src: 'client/styles/images/temp/1thargoid.jpg',
       alt: 'thargoid ships',
       author: 'Frontier',
       title: 'Thargoid Ships',
@@ -12,7 +11,7 @@ const Projects = () => {
       des: 'Thargoid Ships are a race of Aliens that live in the galaxy.',
     },
     {
-      src: 'images/1080p-space.jpg',
+      src: 'client/styles/images/temp/1080p-space.jpg',
       alt: 'Fake Space ships',
       author: 'Unknown',
       title: 'Awesome Space',
@@ -20,7 +19,7 @@ const Projects = () => {
       des: 'Space is the most beautiful place in the universe. This one is Fake.',
     },
     {
-      src: 'images/BlueStar.jpg',
+      src: 'client/styles/images/temp/BlueStar.jpg',
       alt: 'blue star with ship on planet with rings',
       author: 'Karl',
       title: 'Blue Star with rings',
@@ -28,7 +27,7 @@ const Projects = () => {
       des: 'Blue star picture taken by karl on a planet with rings',
     },
     {
-      src: 'images/Conda.jpg',
+      src: 'client/styles/images/temp/Conda.jpg',
       alt: 'Anaconda ship in a small nebula',
       author: 'KY71',
       title: 'Nebula with a large snake',
@@ -36,7 +35,7 @@ const Projects = () => {
       des: 'Picture of an anaconda ship in a small nebula',
     },
     {
-      src: 'images/Swirl.jpg',
+      src: 'client/styles/images/temp/Swirl.jpg',
       alt: 'swirl',
       author: 'Unknown',
       title: 'Swirl',
@@ -127,51 +126,53 @@ const Projects = () => {
   }, [currentIndex, running, showSlider])
 
   return (
-    <div className={`carousel ${running ? 'running' : ''} ${direction}`}>
-      <div className="list">
-        {sliderItems.map((item, index) => (
-          <div
-            className={`item ${index === currentIndex ? 'active' : ''}`}
-            key={index}
-          >
-            <img src={item.src} alt={item.alt} />
-            <div className="content">
-              <div className="author">{item.author}</div>
-              <div className="title">{item.title}</div>
-              <div className="topic">{item.topic}</div>
-              <div className="des">{item.des}</div>
-              <div className="buttons">
-                <button>Read More</button>
-                <button>Subscribe</button>
+    <>
+      <div className={`carousel ${running ? 'running' : ''} ${direction}`}>
+        <div className="list">
+          {sliderItems.map((item, index) => (
+            <div
+              className={`item ${index === currentIndex ? 'active' : ''}`}
+              key={index}
+            >
+              <img src={item.src} alt={item.alt} />
+              <div className="content">
+                <div className="author">{item.author}</div>
+                <div className="title">{item.title}</div>
+                <div className="topic">{item.topic}</div>
+                <div className="des">{item.des}</div>
+                <div className="buttons">
+                  <button>Read More</button>
+                  <button>Subscribe</button>
+                </div>
               </div>
             </div>
-          </div>
-        ))}
-      </div>
-      <div className="thumbnail">
-        {sliderItems.map((item, index) => (
-          <div
-            className={`item ${index === currentIndex ? 'active' : ''}`}
-            key={index}
-          >
-            <img src={item.src} alt={item.alt} />
-            <div className="content">
-              <div className="title">{item.title}</div>
-              <div className="des">Description</div>
+          ))}
+        </div>
+        <div className="thumbnail">
+          {sliderItems.map((item, index) => (
+            <div
+              className={`item ${index === currentIndex ? 'active' : ''}`}
+              key={index}
+            >
+              <img src={item.src} alt={item.alt} />
+              <div className="content">
+                <div className="title">{item.title}</div>
+                <div className="des">Description</div>
+              </div>
             </div>
-          </div>
-        ))}
+          ))}
+        </div>
+        <div className="arrows">
+          <button id="prev" onClick={() => showSlider('prev')}>
+            {'<'}
+          </button>
+          <button id="next" onClick={() => showSlider('next')}>
+            {'>'}
+          </button>
+        </div>
+        <div className="time"></div>
       </div>
-      <div className="arrows">
-        <button id="prev" onClick={() => showSlider('prev')}>
-          {'<'}
-        </button>
-        <button id="next" onClick={() => showSlider('next')}>
-          {'>'}
-        </button>
-      </div>
-      <div className="time"></div>
-    </div>
+    </>
   )
 }
 

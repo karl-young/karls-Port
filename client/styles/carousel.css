@@ -3,40 +3,12 @@
 :root {
   --font-family: 'Poppins', sans-serif;
   --color-bg: darkslategrey;
-  --color-text: #eee;
+  --color-text: white;
   --color-primary: #00beef;
   --color-accent: #f1683a;
   --border-radius: 20px;
   --animation-duration: 0.5s;
   --custom-animation-duration: 5s;
-}
-
-body {
-  margin: 0;
-  background-color: var(--color-bg);
-  color: var(--color-text);
-  font-family: var(--font-family);
-  font-size: 12px;
-}
-
-a {
-  text-decoration: none;
-}
-
-header {
-  width: 1140px;
-  max-width: 80%;
-  margin: auto;
-  height: 50px;
-  display: flex;
-  align-items: center;
-  position: relative;
-  z-index: 100;
-}
-
-header a {
-  color: var(--color-text);
-  margin-right: 40px;
 }
 
 /* carousel */
@@ -49,6 +21,7 @@ header a {
   margin-top: -50px;
   overflow: hidden;
   position: relative;
+  text-decoration: none;
 }
 
 .carousel .list .item {

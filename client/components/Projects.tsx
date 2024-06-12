@@ -9,8 +9,10 @@ const Projects = () => {
       title: 'Thargoid Ships',
       topic: 'Aliens',
       des: 'Thargoid Ships are a race of Aliens that live in the galaxy.',
-      btn: 'Learn More',
+      btn: 'Live App',
+      btn2: "Source Code",
       link: 'https://github.com/yourusername/repo1',
+      link2: "https://github.com/karl-young/2D-port-game"
     },
     {
       src: 'client/styles/images/temp/1080p-space.jpg',
@@ -18,8 +20,10 @@ const Projects = () => {
       title: 'Awesome Space',
       topic: 'Space',
       des: 'Space is the most beautiful place in the universe. This one is Fake.',
-      btn: 'Learn More',
+      btn: 'Live App',
+      btn2: "Source Code",
       link: 'https://github.com/yourusername/repo1',
+      link2: "https://github.com/karl-young/2D-port-game"
     },
     {
       src: 'client/styles/images/temp/BlueStar.jpg',
@@ -27,26 +31,21 @@ const Projects = () => {
       title: 'Blue Star with rings',
       topic: 'Blue Star',
       des: 'Blue star picture taken by karl on a planet with rings',
-      btn: 'Learn More',
+      btn: 'Live App',
+      btn2: "Source Code",
       link: 'https://github.com/yourusername/repo1',
+      link2: "https://github.com/karl-young/2D-port-game"
     },
     {
-      src: 'client/styles/images/temp/Conda.jpg',
-      alt: 'Anaconda ship in a small nebula',
-      title: 'Nebula with a large snake',
-      topic: 'Space and Ships',
-      des: 'Picture of an anaconda ship in a small nebula',
-      btn: 'Learn More',
-      link: 'https://github.com/yourusername/repo1',
-    },
-    {
-      src: 'client/styles/images/temp/Swirl.jpg',
-      alt: 'swirl',
-      title: 'Swirl',
-      topic: 'Abstract',
-      des: 'An abstract picture of swirls',
-      btn: 'Learn More',
-      link: 'https://github.com/yourusername/repo1',
+      src: 'client/styles/images/projects/2D-Port-Game.png',
+      alt: '2D port game',
+      title: '2D Port Game',
+      topic: 'My Portfolio Game',
+      des: 'A portfolio game made with HTML, CSS, JavaScript, and Kaboom.js.',
+      btn: 'Live App',
+      btn2: "Source Code",
+      link: 'https://karl-young.github.io/2D-port-game/',
+      link2: "https://github.com/karl-young/2D-port-game"
     },
   ])
 
@@ -117,7 +116,12 @@ const Projects = () => {
                 <div className="topic">{item.topic}</div>
                 <div className="des">{item.des}</div>
                 <div className="buttons">
-                  <button className="button">{item.btn}</button>
+                  <a href={item.link} target="_blank" rel="noopener noreferrer">
+                    <button className="button">{item.btn}</button>
+                  </a>
+                  <a href={item.link2} target="_blank" rel="noopener noreferrer">
+                    <button className="button">{item.btn2}</button>
+                  </a>
                 </div>
               </div>
             </div>

@@ -3,72 +3,72 @@ import { useState } from 'react'
 const skills = [
   {
     name: 'HTML',
-    src: 'client/styles/images/html-svgrepo-com.svg',
+    src: 'client/styles/images/skills/html-svgrepo-com.svg',
     alt: 'HTML logo',
   },
   {
     name: 'CSS3',
-    src: 'client/styles/images/css-3-svgrepo-com.svg',
+    src: 'client/styles/images/skills/css-3-svgrepo-com.svg',
     alt: 'CSS3 logo',
   },
   {
     name: 'JavaScript',
-    src: 'client/styles/images/javascript-svgrepo-com.svg',
+    src: 'client/styles/images/skills/javascript-svgrepo-com.svg',
     alt: 'JavaScript logo',
   },
   {
     name: 'React',
-    src: 'client/styles/images/react-svgrepo-com.svg',
+    src: 'client/styles/images/skills/react-svgrepo-com.svg',
     alt: 'React logo',
   },
   {
     name: 'Git',
-    src: 'client/styles/images/git-svgrepo-com.svg',
+    src: 'client/styles/images/skills/git-svgrepo-com.svg',
     alt: 'Git logo',
   },
   {
     name: 'GitHub',
-    src: 'client/styles/images/github-142-svgrepo-com.svg',
+    src: 'client/styles/images/skills/github-142-svgrepo-com.svg',
     alt: 'GitHub logo',
   },
   {
     name: 'Node.js',
-    src: 'client/styles/images/node-js-svgrepo-com.svg',
+    src: 'client/styles/images/skills/node-js-svgrepo-com.svg',
     alt: 'Node.js logo',
   },
   {
     name: 'TypeScript',
-    src: 'client/styles/images/typescript-svgrepo-com.svg',
+    src: 'client/styles/images/skills/typescript-svgrepo-com.svg',
     alt: 'TypeScript logo',
   },
   {
     name: 'TailWind',
-    src: 'client/styles/images/tailwind-svgrepo-com.svg',
+    src: 'client/styles/images/skills/tailwind-svgrepo-com.svg',
     alt: 'TailWind logo',
   },
   {
     name: 'Vite',
-    src: 'client/styles/images/vite-svgrepo-com.svg',
+    src: 'client/styles/images/skills/vite-svgrepo-com.svg',
     alt: 'Vite logo',
   },
   {
     name: 'SQLite',
-    src: 'client/styles/images/sqlite-svgrepo-com.svg',
+    src: 'client/styles/images/skills/sqlite-svgrepo-com.svg',
     alt: 'SQLite logo',
   },
   {
     name: 'Express',
-    src: 'client/styles/images/express-svgrepo-com.svg',
+    src: 'client/styles/images/skills/express-svgrepo-com.svg',
     alt: 'Express logo',
   },
   {
     name: 'Knex',
-    src: 'client/styles/images/knex-svgrepo-com.svg',
+    src: 'client/styles/images/skills/knex-svgrepo-com.svg',
     alt: 'Knex logo',
   },
   {
     name: 'Python',
-    src: 'client/styles/images/python-svgrepo-com.svg',
+    src: 'client/styles/images/skills/python-svgrepo-com.svg',
     alt: 'Python logo',
   },
 ]

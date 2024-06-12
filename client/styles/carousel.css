@@ -51,14 +51,10 @@
   text-shadow: 0 5px 10px var(--color-bg);
 }
 
-.carousel .list .item .author {
-  font-weight: bold;
-  letter-spacing: 10px;
-}
 
 .carousel .list .item .title,
 .carousel .list .item .topic {
-  font-size: 5em;
+  font-size: 3em;
   font-weight: bold;
   line-height: 1.3em;
 }
@@ -83,7 +79,7 @@
   letter-spacing: 3px;
   font-family: var(--font-family);
   font-weight: 500;
-  padding: 5px;
+  padding: 10px;
   
 }
 

@@ -36,17 +36,22 @@ function App() {
             <Header />
           </header>
         </section>
-        <section id="about">
-          <NavBar />
-          <Description />
+        <section>
+            <NavBar />
+          <section id="about">
+            <Description />
+          </section>
+          <section id="skills">
+            <Skills />
+          </section>
+          <section
+            className="relative h-screen px-10 flex justify-center items-center gap-3 py-52"
+            id="projects"
+          >
+            <Projects />
+          </section>
         </section>
-        <section id="skills">
-          <Skills />
-        </section>
-        <section id="projects">
-          <Projects />
-        </section>
-        
+
         <Background />
       </div>
     </>

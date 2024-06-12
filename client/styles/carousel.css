@@ -78,10 +78,13 @@
 .carousel .list .item .buttons button {
   border-radius: 12px;
   border: none;
-  background-color: var(--color-text);
+  background-color: var(--color-bg);
+  color: var(--color-text);
   letter-spacing: 3px;
   font-family: var(--font-family);
   font-weight: 500;
+  padding: 5px;
+  
 }
 
 .carousel .list .item .buttons button:nth-child(2) {

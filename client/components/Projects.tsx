@@ -27,7 +27,7 @@ const Projects = () => {
       src: 'client/styles/images/temp/BlueStar.jpg',
       alt: 'blue star with ship on planet with rings',
       title: 'Blue Star with rings',
-      des: 'Blue star picture taken by karl on a planet with rings',
+      des: 'Blue star picture taken by me on a planet with rings',
       btn: 'Live App',
       btn2: "Learn More",
       link: 'https://github.com/yourusername/repo1',

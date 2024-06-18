@@ -63,8 +63,8 @@ const NavBar = () => {
 
           {/* Modal Container */}
           <div
-            className={`bg-slate-700 text-neutral pb-20  rounded-md shadow-2xl transform transition-transform duration-500 ease-in-out ${
-              isModalExpanded ? 'w-full h-full' : 'w-[500px] custom-height '
+            className={`bg-slate-700 text-neutral pb-auto  rounded-md shadow-2xl transform transition-transform duration-500 ease-in-out ${
+              isModalExpanded ? 'w-full h-full' : 'w-[500px] h-auto '
             } translate-y-16 opacity-0 animate-showModal`}
           >
             <div className="flex bg-slate-800 justify-between items-center rounded-t-md  mb-4">
@@ -125,6 +125,17 @@ const NavBar = () => {
               <div className=" p-6  bg-slate-800">
                 <h3>Discord Username:</h3>
                 <p>Karl(ky71)#31428</p>
+              </div>
+              <div className=" p-6  ">
+                <h3>My Resume</h3>
+                <a
+                  href="https://docs.google.com/presentation/d/1AUejQFNK5vupxhz2nzUS0ggoN4Mykl_wdi7plZCLgGw/edit#slide=id.p"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-green"
+                >
+                  Link to Resume
+                </a>
               </div>
             </div>
           </div>

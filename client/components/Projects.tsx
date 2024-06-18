@@ -4,24 +4,22 @@ import { Project } from '../../models/Projects'
 const Projects = () => {
   const [sliderItems, setSliderItems] = useState([
     {
-      src: 'client/styles/images/temp/1thargoid.jpg',
-      alt: 'thargoid ships',
-      title: 'Thargoid Ships',
-      topic: 'Aliens',
-      des: 'Thargoid Ships are a race of Aliens that live in the galaxy.',
+      src: '/client/styles/images/projects/Api-playground.jpg',
+      alt: 'Api Playground',
+      title: 'Api Playground',
+      des: 'A fun project to play around with apis and learn more about them. Made with React and TypeScript',
       btn: 'Live App',
-      btn2: "Source Code",
-      link: 'https://github.com/yourusername/repo1',
-      link2: "https://github.com/karl-young/2D-port-game"
+      btn2: "Learn More",
+      link: '#',
+      link2: "https://github.com/karl-young/api-playground"
     },
     {
       src: 'client/styles/images/temp/1080p-space.jpg',
       alt: 'Fake Space ships',
       title: 'Awesome Space',
-      topic: 'Space',
       des: 'Space is the most beautiful place in the universe. This one is Fake.',
       btn: 'Live App',
-      btn2: "Source Code",
+      btn2: "Learn More",
       link: 'https://github.com/yourusername/repo1',
       link2: "https://github.com/karl-young/2D-port-game"
     },
@@ -29,10 +27,9 @@ const Projects = () => {
       src: 'client/styles/images/temp/BlueStar.jpg',
       alt: 'blue star with ship on planet with rings',
       title: 'Blue Star with rings',
-      topic: 'Blue Star',
       des: 'Blue star picture taken by karl on a planet with rings',
       btn: 'Live App',
-      btn2: "Source Code",
+      btn2: "Learn More",
       link: 'https://github.com/yourusername/repo1',
       link2: "https://github.com/karl-young/2D-port-game"
     },
@@ -40,10 +37,9 @@ const Projects = () => {
       src: 'client/styles/images/projects/2D-Port-Game.png',
       alt: '2D port game',
       title: '2D Port Game',
-      topic: 'My Portfolio Game',
       des: 'A portfolio game made with HTML, CSS, JavaScript, and Kaboom.js.',
       btn: 'Live App',
-      btn2: "Source Code",
+      btn2: "Learn More",
       link: 'https://karl-young.github.io/2D-port-game/',
       link2: "https://github.com/karl-young/2D-port-game"
     },
@@ -113,7 +109,6 @@ const Projects = () => {
               <img src={item.src} alt={item.alt} />
               <div className="content">
                 <div className="title">{item.title}</div>
-                <div className="topic">{item.topic}</div>
                 <div className="des">{item.des}</div>
                 <div className="buttons">
                   <a href={item.link} target="_blank" rel="noopener noreferrer">

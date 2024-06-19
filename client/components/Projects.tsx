@@ -99,13 +99,13 @@ const Projects = () => {
 
   return (
     <>
-      <div className="carousel-container">
+      <div className="carousel-container no-select">
       <div className="header">
         <h1>My Projects</h1>
         <p>
-          Here are some of my favorite projects that I&apos;ve worked on so far.
+          Here are some of my projects that I&apos;ve worked on so far.
           As a web developer in the early stages of my career, I&apos;m always
-          looking for fun challenges to learn from and improve my skills. Any
+          looking for fun challenges to learn from, and improve my skills. Any
           feedback is appreciated as I continue to grow and take on new
           projects.
         </p>

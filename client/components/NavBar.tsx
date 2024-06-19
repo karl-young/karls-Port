@@ -27,7 +27,7 @@ const NavBar = () => {
 
   return (
     <>
-      <nav className="bg-slate-700 opacity-90 sticky drop-shadow-xl top-0 flex items-center h-12 w-full z-50">
+      <nav className="no-select bg-slate-700 opacity-90 sticky drop-shadow-xl top-0 flex items-center h-12 w-full z-50">
         <div className="flex flex-grow justify-end space-x-4">
           {[
             ['Home', '#home'],
@@ -68,7 +68,7 @@ const NavBar = () => {
             } translate-y-16 opacity-0 animate-showModal`}
           >
             <div className="flex bg-slate-800 justify-between items-center rounded-t-md  mb-4">
-              <h2 className="text-2xl px-2 ml-2 bg-slate-700 rounded-t-lg text-neutral font-bold font-Helvetica">
+              <h2 className="no-select text-2xl px-2 ml-2 bg-slate-700 rounded-t-lg text-neutral font-bold font-Helvetica">
                 My Contact Information
               </h2>
               <div className="flex mr-2 space-x-1 ">
@@ -95,7 +95,7 @@ const NavBar = () => {
                 </button>
               </div>
             </div>
-            <div className="ml-4">
+            <div className="no-select ml-4">
               <h2 className="text-green font-bold text-xl">Hi, Karl here!</h2>
               <h3>This is how you can reach me:</h3>
             </div>

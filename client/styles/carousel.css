@@ -37,7 +37,7 @@
   border: var(--color-bg) 5px solid;
   border-radius: var(--border-radius);
   height: 800px;
-  width: 1200px;
+  width:1200px;
   overflow: hidden;
   position: relative;
   text-decoration: none;

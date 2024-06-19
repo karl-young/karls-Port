@@ -1,6 +1,6 @@
 const Description = () => {
   return (
-    <section className="relative h-1/2  flex justify-center items-center gap-3 py-52">
+    <section className="no-select relative h-1/2  flex justify-center items-center gap-3 py-52">
       <article
         id="About"
         className="p-8 max-w-screen-md bg-slate-600 rounded-2xl relative z-10

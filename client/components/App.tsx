@@ -7,6 +7,7 @@ import Snow from './Snow'
 import { useState } from 'react'
 import Skills from './Skills'
 import Projects from './Projects'
+import Footer from './Footer'
 
 function App() {
   const [showCanvas, setShowCanvas] = useState(true)
@@ -26,7 +27,7 @@ function App() {
                 className={`button ${showCanvas ? '' : 'spin-animation'}`}
                 onClick={toggleCanvas}
               >
-                <div className="snowflake-container">
+                <div className="no-select snowflake-container">
                   <div className="brackets ">{'<\u00A0'}</div>
                   <div className="snowflake"></div>
                   <div className="brackets ">{`\u00A0>`}</div>
@@ -47,6 +48,9 @@ function App() {
             id="projects"
           >
             <Projects />
+          </section>
+          <section>
+            <Footer />
           </section>
         </section>
 

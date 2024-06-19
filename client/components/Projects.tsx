@@ -9,9 +9,9 @@ const Projects = () => {
       title: 'Api Playground',
       des: 'A fun project to play around with apis and learn more about them. Made with React and TypeScript',
       btn: 'Live App',
-      btn2: "Learn More",
+      btn2: 'Learn More',
       link: '#',
-      link2: "https://github.com/karl-young/api-playground"
+      link2: 'https://github.com/karl-young/api-playground',
     },
     {
       src: 'client/styles/images/temp/1080p-space.jpg',
@@ -19,9 +19,9 @@ const Projects = () => {
       title: 'Awesome Space',
       des: 'Space is the most beautiful place in the universe. This one is Fake.',
       btn: 'Live App',
-      btn2: "Learn More",
+      btn2: 'Learn More',
       link: 'https://github.com/yourusername/repo1',
-      link2: "https://github.com/karl-young/2D-port-game"
+      link2: 'https://github.com/karl-young/2D-port-game',
     },
     {
       src: 'client/styles/images/temp/BlueStar.jpg',
@@ -29,9 +29,9 @@ const Projects = () => {
       title: 'Blue Star with rings',
       des: 'Blue star picture taken by me on a planet with rings',
       btn: 'Live App',
-      btn2: "Learn More",
+      btn2: 'Learn More',
       link: 'https://github.com/yourusername/repo1',
-      link2: "https://github.com/karl-young/2D-port-game"
+      link2: 'https://github.com/karl-young/2D-port-game',
     },
     {
       src: 'client/styles/images/projects/2D-Port-Game.png',
@@ -39,9 +39,9 @@ const Projects = () => {
       title: '2D Port Game',
       des: 'A portfolio game made with HTML, CSS, JavaScript, and Kaboom.js.',
       btn: 'Live App',
-      btn2: "Learn More",
+      btn2: 'Learn More',
       link: 'https://karl-young.github.io/2D-port-game/',
-      link2: "https://github.com/karl-young/2D-port-game"
+      link2: 'https://github.com/karl-young/2D-port-game',
     },
   ])
 
@@ -99,6 +99,17 @@ const Projects = () => {
 
   return (
     <>
+      <div className="carousel-container">
+      <div className="header">
+        <h1>My Projects</h1>
+        <p>
+          Here are some of my favorite projects that I&apos;ve worked on so far.
+          As a web developer in the early stages of my career, I&apos;m always
+          looking for fun challenges to learn from and improve my skills. Any
+          feedback is appreciated as I continue to grow and take on new
+          projects.
+        </p>
+      </div>
       <div className={`carousel ${running ? 'running' : ''} ${direction}`}>
         <div className="list">
           {sliderItems.map((item, index) => (
@@ -114,7 +125,11 @@ const Projects = () => {
                   <a href={item.link} target="_blank" rel="noopener noreferrer">
                     <button className="button">{item.btn}</button>
                   </a>
-                  <a href={item.link2} target="_blank" rel="noopener noreferrer">
+                  <a
+                    href={item.link2}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     <button className="button">{item.btn2}</button>
                   </a>
                 </div>
@@ -146,6 +161,7 @@ const Projects = () => {
         </div>
         <div className="time"></div>
       </div>
+    </div>
     </>
   )
 }

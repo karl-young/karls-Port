@@ -87,7 +87,7 @@ const Skills = () => {
   return (
     <div className="flex flex-col items-center justify-center min-h-1/2 text-neutral">
       <div className="max-w-5xl px-4">
-        <h1 className="text-3xl text-green font-bold mb-4">My Skills</h1>
+        <h1 className="text-3xl text-green font-bold mb-3">My Skills</h1>
         <p className="text-lg text-neutral mb-8">
           These skills form the foundation of my technical journey. I am
           passionate about expanding my knowledge and embracing new technologies

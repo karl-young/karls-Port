@@ -37,11 +37,9 @@ function App() {
           </header>
         </section>
         <section>
-            <NavBar />
+          <NavBar />
           <section id="about">
             <Description />
-          </section>
-          <section id="skills">
             <Skills />
           </section>
           <section

@@ -109,6 +109,8 @@ const NavBar = () => {
                 <a
                   className="hover:text-green"
                   href="https://www.linkedin.com/in/karl-young-4846602a4/"
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
                   My Linked-In
                 </a>
@@ -118,6 +120,8 @@ const NavBar = () => {
                 <a
                   className="hover:text-green"
                   href="https://github.com/karl-young"
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
                   My GitHub
                 </a>

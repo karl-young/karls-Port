@@ -3,8 +3,9 @@ const Description = () => {
     <section className="no-select relative h-1/2  flex justify-center items-center gap-3 py-52">
       <article
         id="About"
-        className="p-8 max-w-screen-md bg-slate-600 rounded-2xl relative z-10
-        lg:p-12 md:p-10 sm:p-8"
+        className="p-8 m-8 max-w-screen-md bg-slate-600 rounded-2xl relative z-10
+        lg:p-12 md:p-10 sm:p-8
+        lg:m-12 md:m-10 sm:m-8"
       >
         <div className="pl-8">
           <div className="text-green font-bold text-3xl pb-2">

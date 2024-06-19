@@ -100,9 +100,9 @@ const Projects = () => {
   return (
     <>
       <div className="carousel-container no-select">
-      <div className="header">
+      <div className="header text-3xl">
         <h1>My Projects</h1>
-        <p>
+        <p className='text-lg'>
           Here are some of my projects that I&apos;ve worked on so far.
           As a web developer in the early stages of my career, I&apos;m always
           looking for fun challenges to learn from, and improve my skills. Any

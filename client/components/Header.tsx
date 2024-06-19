@@ -1,7 +1,7 @@
 const Header = () => {
   return (
     <>
-      <section className="no-select relative flex flex-col flex-nowrap  justify-center item-center w-fit h-screen ml-auto mr-auto z-20 min-w-fit">
+      <section className="no-select relative flex flex-col flex-nowrap  justify-center item-center w-fit h-[96.8vh] ml-auto mr-auto z-20 min-w-fit">
         <div
           className="font-Helvetica  text-neutral fromRight self-center transition-all  duration-400 ease-in-out text-2xl pb-0
         lg:text-6xl md:text-5xl sm:text-2xl 

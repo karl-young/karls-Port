@@ -74,7 +74,6 @@ const Background = () => {
 
     const context = canvas?.getContext('2d')
     if (!context) {
-      console.log('No Context 2d')
       return
     }
     context.clearRect(0, 0, window.innerWidth, window.innerHeight) // clear

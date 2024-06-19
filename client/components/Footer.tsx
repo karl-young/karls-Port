@@ -29,12 +29,14 @@ const Footer = () => {
             />
           </a>
         </div>
-        <a
-          href="Home"
-          className="px-4 py-2 text-neutral-light hover:text-neutral-dark"
+        <button
+          onClick={() => {
+            window.scrollTo({ top: 0, behavior: 'smooth' })
+          }}
+          className="px-4 py-2 text-neutral-light hover:text-green"
         >
           Back to top
-        </a>
+        </button>
       </div>
       <p className="text-center text-neutral-light">
         Made with ❤️ in Otago, NZ. &copy; {currentYear} by Karl Young. All

@@ -1,6 +1,9 @@
 const Description = () => {
   return (
-    <section className="no-select relative h-1/2  flex justify-center items-center gap-3 py-52">
+    <section className="no-select relative h-1/2  flex justify-center items-center py-52">
+      <div className=" relative bottom-20 left-24 z-20">
+        <img id="me" src="client/styles/images/Me-w-hat.jpg" alt="The Developer" className="rounded-3xl h-auto w-[300px] min-w-[300px] shadow-xl" />
+      </div>
       <article
         id="About"
         className="p-8 m-8 max-w-screen-md bg-slate-600 rounded-2xl relative z-10

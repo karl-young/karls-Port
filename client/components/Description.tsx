@@ -1,14 +1,15 @@
 const Description = () => {
   return (
-    <section className="no-select relative h-1/2  flex justify-center items-center py-52">
-      <div className=" relative bottom-20 left-24 z-20">
-        <img id="me" src="client/styles/images/Me-w-hat.jpg" alt="The Developer" className="rounded-3xl h-auto w-[300px] min-w-[300px] shadow-xl" />
-      </div>
+    <section className="no-select relative h-1/2  flex justify-center flex-wrap items-center py-52">
+      
+        <img id="me" src="client/styles/images/Me-w-hat.jpg" alt="The Developer" className="z-20 rounded-3xl h-auto w-[300px] min-w-[300px] shadow-xl" />
+      
       <article
         id="About"
         className="p-8 m-8 max-w-screen-md bg-slate-600 rounded-2xl relative z-10
         lg:p-12 md:p-10 sm:p-8
-        lg:m-12 md:m-10 sm:m-8"
+        lg:m-12 md:m-10 sm:m-8
+        "
       >
         <div className="pl-8">
           <div className="text-green font-bold text-3xl pb-2">

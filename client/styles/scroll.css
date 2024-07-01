@@ -19,3 +19,31 @@ html {
 ::-webkit-scrollbar-thumb:hover {
   background: #15803d;
 }
+
+/*  adding media query for the about me section where the picture moves to the right and the description section moves below the picture */
+
+#me {
+  position: relative;
+  left: 110px;
+  bottom: 110px;
+  display: flex;
+  flex-direction: column;
+}
+
+@media (max-width: 1440px)  {
+
+  #me {
+    transform: translate(0px, 100px);
+  }
+}
+
+
+
+
+
+@media (max-width: 800px)  {
+  #me {
+    transform: scale(0.8);
+    bottom: -100px;
+  }
+}

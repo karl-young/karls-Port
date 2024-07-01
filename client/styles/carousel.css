@@ -422,3 +422,11 @@
     min-height: 400px; 
   }
 }
+ @media (min-width: 720px) and (max-width: 1224px) {
+   .carousel {
+     width: 100%;
+     min-height: 600px;
+     margin: 20px;
+   }
+
+ }

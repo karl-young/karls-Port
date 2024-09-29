@@ -1,0 +1,32 @@
+name: CI
+
+on:
+  push:
+    - main
+  pull_request:
+    - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v3
+
+    - name: Set up Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: '20' # Specify the version of Node.js you are using
+
+    - name: Install dependencies
+      run: npm install
+
+    - name: Build the application
+      run: npm run build # Adjust this if your build command is different
+
+    - name: Start server
+      run: |
+        NODE_ENV=production npm start &
+        sleep 10 # Allow time for the server to start
+        

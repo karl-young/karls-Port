@@ -10,7 +10,7 @@ const Footer = () => {
             rel="noreferrer"
           >
             <img
-              src="client/styles/images/icons8-github.svg"
+              src="/images/icons8-github.svg"
               alt="Github"
               width={30}
               height={30}
@@ -22,7 +22,7 @@ const Footer = () => {
             rel="noreferrer"
           >
             <img
-              src="client/styles/images/icons8-linkedin.svg"
+              src="/images/icons8-linkedin.svg"
               alt="LinkedIn"
               width={30}
               height={30}

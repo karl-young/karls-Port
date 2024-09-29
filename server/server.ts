@@ -1,5 +1,5 @@
 import * as Path from 'node:path'
-import express, { ErrorRequestHandler } from 'express'
+import express from 'express'
 
 const server = express()
 server.use(express.json())
@@ -17,14 +17,5 @@ if (process.env.NODE_ENV === 'production') {
     res.sendFile(Path.resolve('./dist/index.html'))
   })
 }
-
-// Error handling middleware
-const errorHandler: ErrorRequestHandler = (err, req, res) => {
-  console.error(err.stack)
-  res.status(500).send('Something broke!')
-}
-
-// Use the error handling middleware
-server.use(errorHandler)
 
 export default server

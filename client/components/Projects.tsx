@@ -4,7 +4,7 @@ import { Project } from '../../models/Projects'
 const Projects = () => {
   const [sliderItems, setSliderItems] = useState([
     {
-      src: '/client/styles/images/projects/Api-playground.jpg',
+      src: '/projects/Api-playground.jpg',
       alt: 'Api Playground',
       title: 'Api Playground',
       des: 'A fun project to play around with apis and learn more about them. Made with React and TypeScript',
@@ -14,7 +14,7 @@ const Projects = () => {
       link2: 'https://github.com/karl-young/api-playground',
     },
     {
-      src: 'client/styles/images/temp/1080p-space.jpg',
+      src: '/images/temp/1080p-space.jpg',
       alt: 'Fake Space ships',
       title: 'Awesome Space',
       des: 'Space is the most beautiful place in the universe. This one is Fake.',
@@ -24,7 +24,7 @@ const Projects = () => {
       link2: 'https://github.com/karl-young/2D-port-game',
     },
     {
-      src: 'client/styles/images/projects/Test-Automation.png',
+      src: '/projects/Test-Automation.png',
       alt: 'Test Automation running on GitHub Actions',
       title: 'Test Automation Essentials Final Project',
       des: 'A dive into test automation.',
@@ -35,7 +35,7 @@ const Projects = () => {
         'https://github.com/karl-young/test-automation-essentials-final-project',
     },
     {
-      src: 'client/styles/images/projects/2D-Port-Game.png',
+      src: '/projects/2D-Port-Game.png',
       alt: '2D port game',
       title: '2D Port Game',
       des: 'A portfolio game made with HTML, CSS, JavaScript, and Kaboom.js.',

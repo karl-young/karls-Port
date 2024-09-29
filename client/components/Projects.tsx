@@ -24,14 +24,15 @@ const Projects = () => {
       link2: 'https://github.com/karl-young/2D-port-game',
     },
     {
-      src: 'client/styles/images/temp/BlueStar.jpg',
-      alt: 'blue star with ship on planet with rings',
-      title: 'Blue Star with rings',
-      des: 'Blue star picture taken by me on a planet with rings',
+      src: 'client/styles/images/projects/Test-Automation.png',
+      alt: 'Test Automation running on GitHub Actions',
+      title: 'Test Automation Essentials Final Project',
+      des: 'A dive into test automation.',
       btn: 'Live App',
       btn2: 'Learn More',
-      link: 'https://github.com/yourusername/repo1',
-      link2: 'https://github.com/karl-young/2D-port-game',
+      link: 'https://karl-young.github.io/test-automation-essentials-final-project/e2e-report/',
+      link2:
+        'https://github.com/karl-young/test-automation-essentials-final-project',
     },
     {
       src: 'client/styles/images/projects/2D-Port-Game.png',
@@ -100,68 +101,72 @@ const Projects = () => {
   return (
     <>
       <div className="carousel-container no-select">
-      <div className="header text-3xl">
-        <h1>My Projects</h1>
-        <p className='text-lg'>
-          Here are some of my projects that I&apos;ve worked on so far.
-          As a web developer in the early stages of my career, I&apos;m always
-          looking for fun challenges to learn from, and improve my skills. Any
-          feedback is appreciated as I continue to grow and take on new
-          projects.
-        </p>
-      </div>
-      <div className={`carousel ${running ? 'running' : ''} ${direction}`}>
-        <div className="list">
-          {sliderItems.map((item, index) => (
-            <div
-              className={`item ${index === currentIndex ? 'active' : ''}`}
-              key={index}
-            >
-              <img src={item.src} alt={item.alt} />
-              <div className="content">
-                <div className="title">{item.title}</div>
-                <div className="des">{item.des}</div>
-                <div className="buttons">
-                  <a href={item.link} target="_blank" rel="noopener noreferrer">
-                    <button className="button">{item.btn}</button>
-                  </a>
-                  <a
-                    href={item.link2}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <button className="button">{item.btn2}</button>
-                  </a>
+        <div className="header text-3xl">
+          <h1>My Projects</h1>
+          <p className="text-lg">
+            Here are some of my projects that I&apos;ve worked on so far. As a
+            web developer in the early stages of my career, I&apos;m always
+            looking for fun challenges to learn from, and improve my skills. Any
+            feedback is appreciated as I continue to grow and take on new
+            projects.
+          </p>
+        </div>
+        <div className={`carousel ${running ? 'running' : ''} ${direction}`}>
+          <div className="list">
+            {sliderItems.map((item, index) => (
+              <div
+                className={`item ${index === currentIndex ? 'active' : ''}`}
+                key={index}
+              >
+                <img src={item.src} alt={item.alt} />
+                <div className="content">
+                  <div className="title">{item.title}</div>
+                  <div className="des">{item.des}</div>
+                  <div className="buttons">
+                    <a
+                      href={item.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <button className="button">{item.btn}</button>
+                    </a>
+                    <a
+                      href={item.link2}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <button className="button">{item.btn2}</button>
+                    </a>
+                  </div>
                 </div>
               </div>
-            </div>
-          ))}
-        </div>
-        <div className="thumbnail">
-          {sliderItems.map((item, index) => (
-            <div
-              className={`item ${index === currentIndex ? 'active' : ''}`}
-              key={index}
-            >
-              <img src={item.src} alt={item.alt} />
-              <div className="content">
-                <div className="title">{item.title}</div>
-                <div className="des">Description</div>
+            ))}
+          </div>
+          <div className="thumbnail">
+            {sliderItems.map((item, index) => (
+              <div
+                className={`item ${index === currentIndex ? 'active' : ''}`}
+                key={index}
+              >
+                <img src={item.src} alt={item.alt} />
+                <div className="content">
+                  <div className="title">{item.title}</div>
+                  <div className="des">Description</div>
+                </div>
               </div>
-            </div>
-          ))}
+            ))}
+          </div>
+          <div className="arrows">
+            <button id="prev" onClick={() => showSlider('prev')}>
+              {'<'}
+            </button>
+            <button id="next" onClick={() => showSlider('next')}>
+              {'>'}
+            </button>
+          </div>
+          <div className="time"></div>
         </div>
-        <div className="arrows">
-          <button id="prev" onClick={() => showSlider('prev')}>
-            {'<'}
-          </button>
-          <button id="next" onClick={() => showSlider('next')}>
-            {'>'}
-          </button>
-        </div>
-        <div className="time"></div>
       </div>
-    </div>
     </>
   )
 }

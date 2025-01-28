@@ -130,7 +130,7 @@ const Background = () => {
     <canvas
       id="canvas1"
       ref={canvasRef}
-      className="fixed top-0  left-0 h-screen bg-stone-900 w-full  -z-10"
+      className="fixed top-0  left-0 h-full bg-stone-900 w-full  -z-10"
     />
   )
 }
